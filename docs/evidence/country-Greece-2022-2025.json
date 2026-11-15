@@ -1,0 +1,122 @@
+{
+  "country": "Greece",
+  "files": {
+    "modis_2024_Greece.csv": {
+      "sensor": "modis",
+      "year": 2024,
+      "batch_id": "909c3c4edfc1d0ffa813377cba5ffccfc465ab91c277f33f1d24779cf5186992",
+      "source_uri": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2024/modis_2024_Greece.csv",
+      "accepted": 1281,
+      "rejected": 0,
+      "listed_updated": "2025-05-30 10:28:44",
+      "processing_statuses": [
+        "standard"
+      ],
+      "archive_query_status": "complete_file",
+      "coverage_status": "unknown"
+    },
+    "modis_2025_Greece.csv": {
+      "sensor": "modis",
+      "year": 2025,
+      "batch_id": "3cc082501bdbcde41422856ef009b96f1ea3e0b0e23baf3c9f381109054e6110",
+      "source_uri": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2025/modis_2025_Greece.csv",
+      "accepted": 1188,
+      "rejected": 0,
+      "listed_updated": "2026-10-10 08:56:42",
+      "processing_statuses": [
+        "standard"
+      ],
+      "archive_query_status": "complete_file",
+      "coverage_status": "unknown"
+    },
+    "modis_2022_Greece.csv": {
+      "sensor": "modis",
+      "year": 2022,
+      "batch_id": "ee0f93bb988ba88ee41bd8c7a72163b02100986236132678c07d34e6ec9e21dc",
+      "source_uri": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2022/modis_2022_Greece.csv",
+      "accepted": 1147,
+      "rejected": 0,
+      "listed_updated": "2023-12-14 11:15:07",
+      "processing_statuses": [
+        "standard"
+      ],
+      "archive_query_status": "complete_file",
+      "coverage_status": "unknown"
+    },
+    "viirs-snpp_2022_Greece.csv": {
+      "sensor": "viirs-snpp",
+      "year": 2022,
+      "batch_id": "20a4d35e431c908e69c7a7b679758aaffecd7ae8ffa999a30a7fb87eebb81534",
+      "source_uri": "https://firms.modaps.eosdis.nasa.gov/data/country/viirs-snpp/2022/viirs-snpp_2022_Greece.csv",
+      "accepted": 4566,
+      "rejected": 0,
+      "listed_updated": "2025-06-19 14:25:54",
+      "processing_statuses": [
+        "standard"
+      ],
+      "archive_query_status": "complete_file",
+      "coverage_status": "unknown"
+    },
+    "viirs-snpp_2024_Greece.csv": {
+      "sensor": "viirs-snpp",
+      "year": 2024,
+      "batch_id": "1924045681eef9ad3300918bd1dfa8685b6827527e2c8b36639436699606a109",
+      "source_uri": "https://firms.modaps.eosdis.nasa.gov/data/country/viirs-snpp/2024/viirs-snpp_2024_Greece.csv",
+      "accepted": 4630,
+      "rejected": 0,
+      "listed_updated": "2025-06-19 13:27:54",
+      "processing_statuses": [
+        "standard"
+      ],
+      "archive_query_status": "complete_file",
+      "coverage_status": "unknown"
+    },
+    "viirs-snpp_2023_Greece.csv": {
+      "sensor": "viirs-snpp",
+      "year": 2023,
+      "batch_id": "4e2e64268a17f538e1cfffeab4f59aaa0d744db2613593bc0953fe51e56cd855",
+      "source_uri": "https://firms.modaps.eosdis.nasa.gov/data/country/viirs-snpp/2023/viirs-snpp_2023_Greece.csv",
+      "accepted": 10475,
+      "rejected": 0,
+      "listed_updated": "2025-06-19 14:01:40",
+      "processing_statuses": [
+        "standard"
+      ],
+      "archive_query_status": "complete_file",
+      "coverage_status": "unknown"
+    },
+    "modis_2023_Greece.csv": {
+      "sensor": "modis",
+      "year": 2023,
+      "batch_id": "3130a6465f3eefcbd206ad39e0b0fba36c6e09714de2e9aac106499fadc57a9d",
+      "source_uri": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2023/modis_2023_Greece.csv",
+      "accepted": 3262,
+      "rejected": 0,
+      "listed_updated": "2024-06-03 14:07:28",
+      "processing_statuses": [
+        "standard"
+      ],
+      "archive_query_status": "complete_file",
+      "coverage_status": "unknown"
+    },
+    "viirs-snpp_2025_Greece.csv": {
+      "sensor": "viirs-snpp",
+      "year": 2025,
+      "batch_id": "e06f76145dc9ecbb0e0ef310e1d37201ebfb037c8531522217d4baab8ff590fc",
+      "source_uri": "https://firms.modaps.eosdis.nasa.gov/data/country/viirs-snpp/2025/viirs-snpp_2025_Greece.csv",
+      "accepted": 4282,
+      "rejected": 0,
+      "listed_updated": "2026-10-10 08:57:09",
+      "processing_statuses": [
+        "standard"
+      ],
+      "archive_query_status": "complete_file",
+      "coverage_status": "unknown"
+    }
+  },
+  "index_sha256": "a85c319c545f0004ffaa659e5063ed0547cc59c409e16d2a54fdcf37e7a33f8c",
+  "source": "https://firms.modaps.eosdis.nasa.gov/data/country/",
+  "created_at": "2026-11-14T20:22:06.477154+00:00",
+  "unavailable": [],
+  "failures": []
+}

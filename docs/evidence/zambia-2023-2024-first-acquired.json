@@ -1,0 +1,55 @@
+{
+  "note": "Zambia S-NPP 2023 and 2024 archive files were first acquired after the Aqua input was chosen; scored with the registered Portugal-trained models, no refit.",
+  "results": {
+    "A": {
+      "months": 24,
+      "status": "extrapolated_unseen_region",
+      "B0_raw": {
+        "mae": 24157.375,
+        "wape": 0.7060815789185246,
+        "signed_bias": -24157.375,
+        "peak_month_concordance": 0.5,
+        "annual_total_bias": {
+          "zambia|2023": -321116.0,
+          "zambia|2024": -258661.0
+        }
+      },
+      "registered_model": {
+        "mae": 9523.265459363958,
+        "wape": 0.2783498750177928,
+        "signed_bias": -4969.406802120145,
+        "peak_month_concordance": 0.5,
+        "annual_total_bias": {
+          "zambia|2023": -103427.30742049472,
+          "zambia|2024": -15838.455830388733
+        }
+      },
+      "total_viirs": 821119
+    },
+    "T": {
+      "months": 24,
+      "status": "extrapolated_unseen_region",
+      "B0_raw": {
+        "mae": 31279.833333333332,
+        "wape": 0.9142596870855503,
+        "signed_bias": -31279.833333333332,
+        "peak_month_concordance": 0.5,
+        "annual_total_bias": {
+          "zambia|2023": -398796.0,
+          "zambia|2024": -351920.0
+        }
+      },
+      "registered_model": {
+        "mae": 24920.108571624965,
+        "wape": 0.7283750658783917,
+        "signed_bias": -24920.108571624965,
+        "peak_month_concordance": 0.5,
+        "annual_total_bias": {
+          "zambia|2023": -319870.12015397305,
+          "zambia|2024": -278212.4855650261
+        }
+      },
+      "total_viirs": 821119
+    }
+  }
+}

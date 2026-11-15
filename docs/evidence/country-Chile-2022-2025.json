@@ -1,0 +1,122 @@
+{
+  "country": "Chile",
+  "files": {
+    "modis_2022_Chile.csv": {
+      "sensor": "modis",
+      "year": 2022,
+      "batch_id": "189a11be2cf269fe6de0eb14c297cb60ba3bc9d1ebd658ccb87a499fb4d380ea",
+      "source_uri": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2022/modis_2022_Chile.csv",
+      "accepted": 7552,
+      "rejected": 0,
+      "listed_updated": "2023-12-14 11:15:07",
+      "processing_statuses": [
+        "standard"
+      ],
+      "archive_query_status": "complete_file",
+      "coverage_status": "unknown"
+    },
+    "modis_2025_Chile.csv": {
+      "sensor": "modis",
+      "year": 2025,
+      "batch_id": "c225abab2d48f6f52644d1b7295ef3cdabf3ce492bb21d960087acea530cf2ca",
+      "source_uri": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2025/modis_2025_Chile.csv",
+      "accepted": 6737,
+      "rejected": 0,
+      "listed_updated": "2026-10-10 08:56:42",
+      "processing_statuses": [
+        "standard"
+      ],
+      "archive_query_status": "complete_file",
+      "coverage_status": "unknown"
+    },
+    "modis_2024_Chile.csv": {
+      "sensor": "modis",
+      "year": 2024,
+      "batch_id": "c1c86ecebc767911bd35b18bba1f33cb8a6f1443baf2139555bc902e61338700",
+      "source_uri": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2024/modis_2024_Chile.csv",
+      "accepted": 6495,
+      "rejected": 0,
+      "listed_updated": "2025-05-30 10:28:43",
+      "processing_statuses": [
+        "standard"
+      ],
+      "archive_query_status": "complete_file",
+      "coverage_status": "unknown"
+    },
+    "modis_2023_Chile.csv": {
+      "sensor": "modis",
+      "year": 2023,
+      "batch_id": "75224614c69d06d3c10c07f19d3ca65db4cd62c9614f4771fc37d04eff3efc64",
+      "source_uri": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2023/modis_2023_Chile.csv",
+      "accepted": 16473,
+      "rejected": 0,
+      "listed_updated": "2024-06-03 14:07:27",
+      "processing_statuses": [
+        "standard"
+      ],
+      "archive_query_status": "complete_file",
+      "coverage_status": "unknown"
+    },
+    "viirs-snpp_2024_Chile.csv": {
+      "sensor": "viirs-snpp",
+      "year": 2024,
+      "batch_id": "bbf8704aeeb4ca02a2a4ff8057bad2c524ccd7ffd8d4790ed558cc15b1a4ccc5",
+      "source_uri": "https://firms.modaps.eosdis.nasa.gov/data/country/viirs-snpp/2024/viirs-snpp_2024_Chile.csv",
+      "accepted": 21647,
+      "rejected": 0,
+      "listed_updated": "2025-06-19 13:27:52",
+      "processing_statuses": [
+        "standard"
+      ],
+      "archive_query_status": "complete_file",
+      "coverage_status": "unknown"
+    },
+    "viirs-snpp_2022_Chile.csv": {
+      "sensor": "viirs-snpp",
+      "year": 2022,
+      "batch_id": "6b5255b0f5f2cae3cb3a9fd4c71b2ea16b48b025f1352622c44ded794ab5f453",
+      "source_uri": "https://firms.modaps.eosdis.nasa.gov/data/country/viirs-snpp/2022/viirs-snpp_2022_Chile.csv",
+      "accepted": 29420,
+      "rejected": 0,
+      "listed_updated": "2025-06-19 14:25:52",
+      "processing_statuses": [
+        "standard"
+      ],
+      "archive_query_status": "complete_file",
+      "coverage_status": "unknown"
+    },
+    "viirs-snpp_2023_Chile.csv": {
+      "sensor": "viirs-snpp",
+      "year": 2023,
+      "batch_id": "ced287dac1f1dd4503a5649dbf92afb719595eefbb69e78f6cddd3a81cbc14af",
+      "source_uri": "https://firms.modaps.eosdis.nasa.gov/data/country/viirs-snpp/2023/viirs-snpp_2023_Chile.csv",
+      "accepted": 54947,
+      "rejected": 0,
+      "listed_updated": "2025-06-19 14:01:38",
+      "processing_statuses": [
+        "standard"
+      ],
+      "archive_query_status": "complete_file",
+      "coverage_status": "unknown"
+    },
+    "viirs-snpp_2025_Chile.csv": {
+      "sensor": "viirs-snpp",
+      "year": 2025,
+      "batch_id": "c6ad5e85bcb65e7a49f3aa60446dcceedf835bcd3f0ee86769be7df79a3e89cf",
+      "source_uri": "https://firms.modaps.eosdis.nasa.gov/data/country/viirs-snpp/2025/viirs-snpp_2025_Chile.csv",
+      "accepted": 25885,
+      "rejected": 0,
+      "listed_updated": "2026-10-10 08:57:09",
+      "processing_statuses": [
+        "standard"
+      ],
+      "archive_query_status": "complete_file",
+      "coverage_status": "unknown"
+    }
+  },
+  "index_sha256": "a85c319c545f0004ffaa659e5063ed0547cc59c409e16d2a54fdcf37e7a33f8c",
+  "source": "https://firms.modaps.eosdis.nasa.gov/data/country/",
+  "created_at": "2026-11-14T20:22:18.674753+00:00",
+  "unavailable": [],
+  "failures": []
+}

@@ -1,0 +1,538 @@
+{
+  "snapshot_id": "e332e0eb4d342a42bf3b44738994a97571b26b1171befb94753557cc4fc1d273",
+  "scope": {
+    "country": "Portugal",
+    "bbox": [
+      -9.6,
+      36.8,
+      -6.0,
+      42.2
+    ]
+  },
+  "by_satellite": {
+    "A": {
+      "D": {
+        "2012": {
+          "detections": 1469,
+          "active_cell_days": 1086,
+          "median_local_solar_hour": 13.173
+        },
+        "2013": {
+          "detections": 1598,
+          "active_cell_days": 1148,
+          "median_local_solar_hour": 13.138
+        },
+        "2014": {
+          "detections": 296,
+          "active_cell_days": 235,
+          "median_local_solar_hour": 13.152
+        },
+        "2015": {
+          "detections": 840,
+          "active_cell_days": 651,
+          "median_local_solar_hour": 13.195
+        },
+        "2016": {
+          "detections": 1471,
+          "active_cell_days": 1004,
+          "median_local_solar_hour": 13.138
+        },
+        "2017": {
+          "detections": 1875,
+          "active_cell_days": 1266,
+          "median_local_solar_hour": 13.2
+        },
+        "2018": {
+          "detections": 487,
+          "active_cell_days": 356,
+          "median_local_solar_hour": 13.187
+        },
+        "2019": {
+          "detections": 524,
+          "active_cell_days": 404,
+          "median_local_solar_hour": 13.155
+        },
+        "2020": {
+          "detections": 430,
+          "active_cell_days": 326,
+          "median_local_solar_hour": 13.162
+        },
+        "2021": {
+          "detections": 397,
+          "active_cell_days": 312,
+          "median_local_solar_hour": 13.141
+        },
+        "2022": {
+          "detections": 749,
+          "active_cell_days": 506,
+          "median_local_solar_hour": 13.209
+        },
+        "2023": {
+          "detections": 460,
+          "active_cell_days": 334,
+          "median_local_solar_hour": 13.412
+        },
+        "2024": {
+          "detections": 677,
+          "active_cell_days": 479,
+          "median_local_solar_hour": 13.485
+        },
+        "2025": {
+          "detections": 1638,
+          "active_cell_days": 936,
+          "median_local_solar_hour": 14.419
+        }
+      },
+      "N": {
+        "2012": {
+          "detections": 395,
+          "active_cell_days": 259,
+          "median_local_solar_hour": 2.053
+        },
+        "2013": {
+          "detections": 783,
+          "active_cell_days": 492,
+          "median_local_solar_hour": 2.051
+        },
+        "2014": {
+          "detections": 35,
+          "active_cell_days": 25,
+          "median_local_solar_hour": 2.049
+        },
+        "2015": {
+          "detections": 205,
+          "active_cell_days": 146,
+          "median_local_solar_hour": 2.077
+        },
+        "2016": {
+          "detections": 945,
+          "active_cell_days": 555,
+          "median_local_solar_hour": 2.046
+        },
+        "2017": {
+          "detections": 1115,
+          "active_cell_days": 644,
+          "median_local_solar_hour": 2.058
+        },
+        "2018": {
+          "detections": 207,
+          "active_cell_days": 116,
+          "median_local_solar_hour": 2.178
+        },
+        "2019": {
+          "detections": 154,
+          "active_cell_days": 94,
+          "median_local_solar_hour": 2.095
+        },
+        "2020": {
+          "detections": 235,
+          "active_cell_days": 153,
+          "median_local_solar_hour": 1.884
+        },
+        "2021": {
+          "detections": 83,
+          "active_cell_days": 59,
+          "median_local_solar_hour": 2.009
+        },
+        "2022": {
+          "detections": 358,
+          "active_cell_days": 215,
+          "median_local_solar_hour": 2.041
+        },
+        "2023": {
+          "detections": 87,
+          "active_cell_days": 53,
+          "median_local_solar_hour": 2.027
+        },
+        "2024": {
+          "detections": 762,
+          "active_cell_days": 426,
+          "median_local_solar_hour": 2.807
+        },
+        "2025": {
+          "detections": 770,
+          "active_cell_days": 451,
+          "median_local_solar_hour": 3.334
+        }
+      }
+    },
+    "N": {
+      "D": {
+        "2012": {
+          "detections": 4297,
+          "active_cell_days": 2139,
+          "median_local_solar_hour": 12.938
+        },
+        "2013": {
+          "detections": 5445,
+          "active_cell_days": 2321,
+          "median_local_solar_hour": 12.977
+        },
+        "2014": {
+          "detections": 1240,
+          "active_cell_days": 754,
+          "median_local_solar_hour": 13.162
+        },
+        "2015": {
+          "detections": 3038,
+          "active_cell_days": 1652,
+          "median_local_solar_hour": 13.132
+        },
+        "2016": {
+          "detections": 5822,
+          "active_cell_days": 1951,
+          "median_local_solar_hour": 13.035
+        },
+        "2017": {
+          "detections": 7837,
+          "active_cell_days": 2732,
+          "median_local_solar_hour": 13.207
+        },
+        "2018": {
+          "detections": 1728,
+          "active_cell_days": 1000,
+          "median_local_solar_hour": 12.986
+        },
+        "2019": {
+          "detections": 1746,
+          "active_cell_days": 1025,
+          "median_local_solar_hour": 13.041
+        },
+        "2020": {
+          "detections": 1590,
+          "active_cell_days": 744,
+          "median_local_solar_hour": 13.079
+        },
+        "2021": {
+          "detections": 1379,
+          "active_cell_days": 825,
+          "median_local_solar_hour": 12.956
+        },
+        "2022": {
+          "detections": 2266,
+          "active_cell_days": 935,
+          "median_local_solar_hour": 12.984
+        },
+        "2023": {
+          "detections": 1488,
+          "active_cell_days": 752,
+          "median_local_solar_hour": 12.872
+        },
+        "2024": {
+          "detections": 4739,
+          "active_cell_days": 1024,
+          "median_local_solar_hour": 12.776
+        },
+        "2025": {
+          "detections": 6586,
+          "active_cell_days": 1373,
+          "median_local_solar_hour": 13.209
+        }
+      },
+      "N": {
+        "2012": {
+          "detections": 4644,
+          "active_cell_days": 1504,
+          "median_local_solar_hour": 1.903
+        },
+        "2013": {
+          "detections": 6516,
+          "active_cell_days": 2108,
+          "median_local_solar_hour": 1.978
+        },
+        "2014": {
+          "detections": 1034,
+          "active_cell_days": 666,
+          "median_local_solar_hour": 1.929
+        },
+        "2015": {
+          "detections": 2738,
+          "active_cell_days": 1266,
+          "median_local_solar_hour": 1.878
+        },
+        "2016": {
+          "detections": 7711,
+          "active_cell_days": 1928,
+          "median_local_solar_hour": 2.066
+        },
+        "2017": {
+          "detections": 11146,
+          "active_cell_days": 2461,
+          "median_local_solar_hour": 1.85
+        },
+        "2018": {
+          "detections": 2044,
+          "active_cell_days": 686,
+          "median_local_solar_hour": 1.853
+        },
+        "2019": {
+          "detections": 1958,
+          "active_cell_days": 806,
+          "median_local_solar_hour": 1.754
+        },
+        "2020": {
+          "detections": 2067,
+          "active_cell_days": 744,
+          "median_local_solar_hour": 1.803
+        },
+        "2021": {
+          "detections": 1179,
+          "active_cell_days": 609,
+          "median_local_solar_hour": 1.881
+        },
+        "2022": {
+          "detections": 2786,
+          "active_cell_days": 885,
+          "median_local_solar_hour": 1.811
+        },
+        "2023": {
+          "detections": 1370,
+          "active_cell_days": 604,
+          "median_local_solar_hour": 1.915
+        },
+        "2024": {
+          "detections": 6884,
+          "active_cell_days": 1152,
+          "median_local_solar_hour": 2.083
+        },
+        "2025": {
+          "detections": 7007,
+          "active_cell_days": 1479,
+          "median_local_solar_hour": 1.984
+        }
+      }
+    },
+    "T": {
+      "D": {
+        "2012": {
+          "detections": 813,
+          "active_cell_days": 611,
+          "median_local_solar_hour": 11.035
+        },
+        "2013": {
+          "detections": 945,
+          "active_cell_days": 685,
+          "median_local_solar_hour": 11.068
+        },
+        "2014": {
+          "detections": 194,
+          "active_cell_days": 151,
+          "median_local_solar_hour": 10.956
+        },
+        "2015": {
+          "detections": 517,
+          "active_cell_days": 408,
+          "median_local_solar_hour": 11.068
+        },
+        "2016": {
+          "detections": 954,
+          "active_cell_days": 685,
+          "median_local_solar_hour": 10.995
+        },
+        "2017": {
+          "detections": 1066,
+          "active_cell_days": 757,
+          "median_local_solar_hour": 11.003
+        },
+        "2018": {
+          "detections": 292,
+          "active_cell_days": 233,
+          "median_local_solar_hour": 11.012
+        },
+        "2019": {
+          "detections": 327,
+          "active_cell_days": 271,
+          "median_local_solar_hour": 10.967
+        },
+        "2020": {
+          "detections": 292,
+          "active_cell_days": 225,
+          "median_local_solar_hour": 10.985
+        },
+        "2021": {
+          "detections": 315,
+          "active_cell_days": 269,
+          "median_local_solar_hour": 10.941
+        },
+        "2022": {
+          "detections": 414,
+          "active_cell_days": 306,
+          "median_local_solar_hour": 10.842
+        },
+        "2023": {
+          "detections": 251,
+          "active_cell_days": 194,
+          "median_local_solar_hour": 10.567
+        },
+        "2024": {
+          "detections": 750,
+          "active_cell_days": 492,
+          "median_local_solar_hour": 10.294
+        },
+        "2025": {
+          "detections": 853,
+          "active_cell_days": 504,
+          "median_local_solar_hour": 9.851
+        }
+      },
+      "N": {
+        "2012": {
+          "detections": 706,
+          "active_cell_days": 430,
+          "median_local_solar_hour": 22.072
+        },
+        "2013": {
+          "detections": 1066,
+          "active_cell_days": 681,
+          "median_local_solar_hour": 21.955
+        },
+        "2014": {
+          "detections": 75,
+          "active_cell_days": 52,
+          "median_local_solar_hour": 22.049
+        },
+        "2015": {
+          "detections": 476,
+          "active_cell_days": 318,
+          "median_local_solar_hour": 22.053
+        },
+        "2016": {
+          "detections": 1301,
+          "active_cell_days": 763,
+          "median_local_solar_hour": 22.06
+        },
+        "2017": {
+          "detections": 2542,
+          "active_cell_days": 1280,
+          "median_local_solar_hour": 21.868
+        },
+        "2018": {
+          "detections": 318,
+          "active_cell_days": 174,
+          "median_local_solar_hour": 21.952
+        },
+        "2019": {
+          "detections": 255,
+          "active_cell_days": 171,
+          "median_local_solar_hour": 22.292
+        },
+        "2020": {
+          "detections": 364,
+          "active_cell_days": 226,
+          "median_local_solar_hour": 21.82
+        },
+        "2021": {
+          "detections": 148,
+          "active_cell_days": 103,
+          "median_local_solar_hour": 21.715
+        },
+        "2022": {
+          "detections": 741,
+          "active_cell_days": 419,
+          "median_local_solar_hour": 21.834
+        },
+        "2023": {
+          "detections": 220,
+          "active_cell_days": 132,
+          "median_local_solar_hour": 21.739
+        },
+        "2024": {
+          "detections": 824,
+          "active_cell_days": 492,
+          "median_local_solar_hour": 21.364
+        },
+        "2025": {
+          "detections": 1606,
+          "active_cell_days": 856,
+          "median_local_solar_hour": 20.865
+        }
+      }
+    }
+  },
+  "ratio_stability": {
+    "T-D": {
+      "annual_snpp_over_modis": {
+        "2012": 3.501,
+        "2013": 3.388,
+        "2014": 4.993,
+        "2015": 4.049,
+        "2016": 2.848,
+        "2017": 3.609,
+        "2018": 4.292,
+        "2019": 3.782,
+        "2020": 3.307,
+        "2021": 3.067,
+        "2022": 3.056,
+        "2023": 3.876,
+        "2024": 2.081,
+        "2025": 2.724
+      },
+      "cv_2012_2021": 0.1711013849426456,
+      "cv_2022_2025": 0.25455408208522196
+    },
+    "T-N": {
+      "annual_snpp_over_modis": {
+        "2012": 3.498,
+        "2013": 3.095,
+        "2014": 12.808,
+        "2015": 3.981,
+        "2016": 2.527,
+        "2017": 1.923,
+        "2018": 3.943,
+        "2019": 4.713,
+        "2020": 3.292,
+        "2021": 5.913,
+        "2022": 2.112,
+        "2023": 4.576,
+        "2024": 2.341,
+        "2025": 1.728
+      },
+      "cv_2012_2021": 0.6787422384227721,
+      "cv_2022_2025": 0.4770275417490897
+    },
+    "A-D": {
+      "annual_snpp_over_modis": {
+        "2012": 1.97,
+        "2013": 2.022,
+        "2014": 3.209,
+        "2015": 2.538,
+        "2016": 1.943,
+        "2017": 2.158,
+        "2018": 2.809,
+        "2019": 2.537,
+        "2020": 2.282,
+        "2021": 2.644,
+        "2022": 1.848,
+        "2023": 2.251,
+        "2024": 2.138,
+        "2025": 1.467
+      },
+      "cv_2012_2021": 0.17080708549207524,
+      "cv_2022_2025": 0.18177445443259152
+    },
+    "A-N": {
+      "annual_snpp_over_modis": {
+        "2012": 5.807,
+        "2013": 4.285,
+        "2014": 26.64,
+        "2015": 8.671,
+        "2016": 3.474,
+        "2017": 3.821,
+        "2018": 5.914,
+        "2019": 8.574,
+        "2020": 4.863,
+        "2021": 10.322,
+        "2022": 4.116,
+        "2023": 11.396,
+        "2024": 2.704,
+        "2025": 3.279
+      },
+      "cv_2012_2021": 0.8330901841593288,
+      "cv_2022_2025": 0.754823767584897
+    }
+  },
+  "interpretation_limits": [
+    "Associations only: overpass drift, sensor ageing, fire-regime change and processing cannot be separated with these data.",
+    "Ratios use annual active-cell days; low-count night passes are noisy."
+  ]
+}

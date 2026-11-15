@@ -1,0 +1,481 @@
+{
+  "model_id": "2ecb4f4553ee5332",
+  "dataset_sha256": "2ecb4f4553ee53323cc7ee09f776e42cd77d12453a153ef6e9d29684a4d774dc",
+  "created_at": "2026-11-14T21:13:39.169956+00:00",
+  "seed": 42,
+  "target": "VIIRS-reference H3 r7 active_cell_days per UTC month",
+  "reference_satellite": "N",
+  "modis_satellite": "A",
+  "processing_status": "standard",
+  "region_scopes": {
+    "portugal_mainland": {
+      "bbox": "-9.6,36.8,-6,42.2",
+      "country": "Portugal"
+    },
+    "uruguay": {
+      "bbox": "-58.5,-35,-53,-30",
+      "country": "Uruguay"
+    }
+  },
+  "years": {
+    "train": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019
+    ],
+    "validation": [
+      2020
+    ],
+    "calibration": [
+      2021
+    ],
+    "test": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  "partition_sizes": {
+    "train": 96,
+    "validation": 12,
+    "calibration": 12,
+    "test": 96
+  },
+  "validation": {
+    "B0_raw_modis": {
+      "mae": 79.0,
+      "wape": 0.6771428571428572,
+      "signed_bias": -79.0,
+      "peak_month_concordance": 1.0,
+      "annual_total_bias": {
+        "portugal_mainland|2020": -948.0
+      }
+    },
+    "B1_shrunk_ratio": {
+      "mae": 32.27786428595695,
+      "wape": 0.2766674081653453,
+      "signed_bias": -9.16425417183765,
+      "peak_month_concordance": 0.0,
+      "annual_total_bias": {
+        "portugal_mainland|2020": -109.97105006205179
+      }
+    },
+    "B2_tweedie": {
+      "mae": 37.89638759733358,
+      "wape": 0.3248261794057164,
+      "signed_bias": 34.3433711745248,
+      "peak_month_concordance": 1.0,
+      "annual_total_bias": {
+        "portugal_mainland|2020": 412.12045409429754
+      }
+    },
+    "B3_loglinear": {
+      "mae": 42.382407270657076,
+      "wape": 0.3632777766056321,
+      "signed_bias": 36.20497776990991,
+      "peak_month_concordance": 1.0,
+      "annual_total_bias": {
+        "portugal_mainland|2020": 434.45973323891894
+      }
+    }
+  },
+  "test": {
+    "B0_raw_modis": {
+      "mae": 89.76041666666667,
+      "wape": 0.6229757085020243,
+      "signed_bias": -89.76041666666667,
+      "peak_month_concordance": 0.75,
+      "annual_total_bias": {
+        "portugal_mainland|2022": -1007.0,
+        "portugal_mainland|2023": -927.0,
+        "portugal_mainland|2024": -1001.0,
+        "portugal_mainland|2025": -1170.0,
+        "uruguay|2022": -1298.0,
+        "uruguay|2023": -1174.0,
+        "uruguay|2024": -650.0,
+        "uruguay|2025": -1390.0
+      },
+      "empirical_interval_coverage": 0.9583333333333334,
+      "mean_interval_width": 285.2708333333333,
+      "band_within_calibration_activity": {
+        "calibration_modis_range": [
+          8.0,
+          120.0
+        ],
+        "months_with_band": 86,
+        "months_band_withheld": 10,
+        "coverage_where_band_shown": 1.0,
+        "coverage_where_band_withheld": 0.6
+      },
+      "year_block_bootstrap_mae_95_interval": [
+        75.60416666666667,
+        101.88541666666667
+      ],
+      "test_year_blocks": 4,
+      "region_year_block_bootstrap_mae_95_interval": [
+        76.97135416666667,
+        102.52135416666667
+      ],
+      "region_year_blocks": 8,
+      "by_region": {
+        "portugal_mainland": {
+          "mae": 85.52083333333333,
+          "wape": 0.5713291579679889,
+          "signed_bias": -85.52083333333333,
+          "peak_month_concordance": 0.5,
+          "annual_total_bias": {
+            "portugal_mainland|2022": -1007.0,
+            "portugal_mainland|2023": -927.0,
+            "portugal_mainland|2024": -1001.0,
+            "portugal_mainland|2025": -1170.0
+          },
+          "empirical_interval_coverage": 0.9583333333333334,
+          "mean_interval_width": 285.0625
+        },
+        "uruguay": {
+          "mae": 94.0,
+          "wape": 0.6788024672784715,
+          "signed_bias": -94.0,
+          "peak_month_concordance": 1.0,
+          "annual_total_bias": {
+            "uruguay|2022": -1298.0,
+            "uruguay|2023": -1174.0,
+            "uruguay|2024": -650.0,
+            "uruguay|2025": -1390.0
+          },
+          "empirical_interval_coverage": 0.9583333333333334,
+          "mean_interval_width": 285.4791666666667
+        }
+      }
+    },
+    "B1_shrunk_ratio": {
+      "mae": 42.731190699621855,
+      "wape": 0.2965727521084223,
+      "signed_bias": 6.975238226388498,
+      "peak_month_concordance": 0.875,
+      "annual_total_bias": {
+        "portugal_mainland|2022": 423.6843456897895,
+        "portugal_mainland|2023": -179.03559822180998,
+        "portugal_mainland|2024": 360.1092135798272,
+        "portugal_mainland|2025": 503.01331857948276,
+        "uruguay|2022": -130.22614840989417,
+        "uruguay|2023": -240.92579505300367,
+        "uruguay|2024": -54.66431095406371,
+        "uruguay|2025": -12.332155477031982
+      },
+      "empirical_interval_coverage": 0.9270833333333334,
+      "mean_interval_width": 155.516240842131,
+      "band_within_calibration_activity": {
+        "calibration_modis_range": [
+          8.0,
+          120.0
+        ],
+        "months_with_band": 86,
+        "months_band_withheld": 10,
+        "coverage_where_band_shown": 0.9883720930232558,
+        "coverage_where_band_withheld": 0.4
+      },
+      "year_block_bootstrap_mae_95_interval": [
+        34.96928951374439,
+        49.109757322804874
+      ],
+      "test_year_blocks": 4,
+      "region_year_block_bootstrap_mae_95_interval": [
+        29.37021923663188,
+        57.15725697838544
+      ],
+      "region_year_blocks": 8,
+      "by_region": {
+        "portugal_mainland": {
+          "mae": 58.8341422944145,
+          "wape": 0.3930464620921219,
+          "signed_bias": 23.07856832556853,
+          "peak_month_concordance": 0.75,
+          "annual_total_bias": {
+            "portugal_mainland|2022": 423.6843456897895,
+            "portugal_mainland|2023": -179.03559822180998,
+            "portugal_mainland|2024": 360.1092135798272,
+            "portugal_mainland|2025": 503.01331857948276
+          },
+          "empirical_interval_coverage": 0.8541666666666666,
+          "mean_interval_width": 147.22062031494784
+        },
+        "uruguay": {
+          "mae": 26.62823910482921,
+          "wape": 0.19229057876211855,
+          "signed_bias": -9.128091872791531,
+          "peak_month_concordance": 1.0,
+          "annual_total_bias": {
+            "uruguay|2022": -130.22614840989417,
+            "uruguay|2023": -240.92579505300367,
+            "uruguay|2024": -54.66431095406371,
+            "uruguay|2025": -12.332155477031982
+          },
+          "empirical_interval_coverage": 1.0,
+          "mean_interval_width": 163.8118613693142
+        }
+      }
+    },
+    "B2_tweedie": {
+      "mae": 47.159554524042306,
+      "wape": 0.3273074923588824,
+      "signed_bias": 37.23864862641607,
+      "peak_month_concordance": 0.625,
+      "annual_total_bias": {
+        "portugal_mainland|2022": 449.5627492730933,
+        "portugal_mainland|2023": 313.43882035012956,
+        "portugal_mainland|2024": 289.4481307667421,
+        "portugal_mainland|2025": 416.40137393783795,
+        "uruguay|2022": 512.1511584283155,
+        "uruguay|2023": 496.66910755475345,
+        "uruguay|2024": 599.7598480974053,
+        "uruguay|2025": 497.4790797276655
+      },
+      "empirical_interval_coverage": 0.8854166666666666,
+      "mean_interval_width": 174.81569781474147,
+      "band_within_calibration_activity": {
+        "calibration_modis_range": [
+          8.0,
+          120.0
+        ],
+        "months_with_band": 86,
+        "months_band_withheld": 10,
+        "coverage_where_band_shown": 0.9302325581395349,
+        "coverage_where_band_withheld": 0.5
+      },
+      "year_block_bootstrap_mae_95_interval": [
+        44.91029463988833,
+        49.02464773888531
+      ],
+      "test_year_blocks": 4,
+      "region_year_block_bootstrap_mae_95_interval": [
+        42.38698201382054,
+        50.91649420935267
+      ],
+      "region_year_blocks": 8,
+      "by_region": {
+        "portugal_mainland": {
+          "mae": 45.130741725662524,
+          "wape": 0.30149973595432167,
+          "signed_bias": 30.601064048495896,
+          "peak_month_concordance": 0.5,
+          "annual_total_bias": {
+            "portugal_mainland|2022": 449.5627492730933,
+            "portugal_mainland|2023": 313.43882035012956,
+            "portugal_mainland|2024": 289.4481307667421,
+            "portugal_mainland|2025": 416.40137393783795
+          },
+          "empirical_interval_coverage": 0.875,
+          "mean_interval_width": 168.58209862871612
+        },
+        "uruguay": {
+          "mae": 49.18836732242209,
+          "wape": 0.35520409680701975,
+          "signed_bias": 43.876233204336245,
+          "peak_month_concordance": 0.75,
+          "annual_total_bias": {
+            "uruguay|2022": 512.1511584283155,
+            "uruguay|2023": 496.66910755475345,
+            "uruguay|2024": 599.7598480974053,
+            "uruguay|2025": 497.4790797276655
+          },
+          "empirical_interval_coverage": 0.8958333333333334,
+          "mean_interval_width": 181.04929700076673
+        }
+      }
+    },
+    "B3_loglinear": {
+      "mae": 46.59714352320245,
+      "wape": 0.3234041193050488,
+      "signed_bias": 40.40514603075953,
+      "peak_month_concordance": 0.75,
+      "annual_total_bias": {
+        "portugal_mainland|2022": 489.1206059040453,
+        "portugal_mainland|2023": 287.43452349485995,
+        "portugal_mainland|2024": 385.18563781913076,
+        "portugal_mainland|2025": 572.4933474736197,
+        "uruguay|2022": 533.069189749323,
+        "uruguay|2023": 471.89724646406967,
+        "uruguay|2024": 589.2166605453588,
+        "uruguay|2025": 550.4768075025079
+      },
+      "empirical_interval_coverage": 0.9166666666666666,
+      "mean_interval_width": 190.07303323967957,
+      "band_within_calibration_activity": {
+        "calibration_modis_range": [
+          8.0,
+          120.0
+        ],
+        "months_with_band": 86,
+        "months_band_withheld": 10,
+        "coverage_where_band_shown": 0.9534883720930233,
+        "coverage_where_band_withheld": 0.6
+      },
+      "year_block_bootstrap_mae_95_interval": [
+        42.75024533192826,
+        50.44404171447663
+      ],
+      "test_year_blocks": 4,
+      "region_year_block_bootstrap_mae_95_interval": [
+        41.7363022214439,
+        50.5877532471238
+      ],
+      "region_year_blocks": 8,
+      "by_region": {
+        "portugal_mainland": {
+          "mae": 44.98467226193653,
+          "wape": 0.30052390655155925,
+          "signed_bias": 36.129877389409494,
+          "peak_month_concordance": 0.5,
+          "annual_total_bias": {
+            "portugal_mainland|2022": 489.1206059040453,
+            "portugal_mainland|2023": 287.43452349485995,
+            "portugal_mainland|2024": 385.18563781913076,
+            "portugal_mainland|2025": 572.4933474736197
+          },
+          "empirical_interval_coverage": 0.8958333333333334,
+          "mean_interval_width": 181.4027995582534
+        },
+        "uruguay": {
+          "mae": 48.209614784468364,
+          "wape": 0.3481362283217213,
+          "signed_bias": 44.68041467210958,
+          "peak_month_concordance": 1.0,
+          "annual_total_bias": {
+            "uruguay|2022": 533.069189749323,
+            "uruguay|2023": 471.89724646406967,
+            "uruguay|2024": 589.2166605453588,
+            "uruguay|2025": 550.4768075025079
+          },
+          "empirical_interval_coverage": 0.9375,
+          "mean_interval_width": 198.74326692110571
+        }
+      }
+    }
+  },
+  "selected_model": "B1_shrunk_ratio",
+  "rolling_origin": {
+    "protocol": "expanding window; fit on all earlier whole years of the same region, forecast one year",
+    "min_train_years": 3,
+    "folds": [
+      {
+        "region": "portugal_mainland",
+        "year": 2015,
+        "train_years": 3,
+        "B0_mae": 166.16666666666666,
+        "B1_mae": 83.62110416156024,
+        "B1_wape": 0.3622574909526075
+      },
+      {
+        "region": "portugal_mainland",
+        "year": 2016,
+        "train_years": 4,
+        "B0_mae": 165.16666666666666,
+        "B1_mae": 67.63295490270765,
+        "B1_wape": 0.24061531539652883
+      },
+      {
+        "region": "portugal_mainland",
+        "year": 2017,
+        "train_years": 5,
+        "B0_mae": 247.83333333333334,
+        "B1_mae": 136.92731329590416,
+        "B1_wape": 0.3478255206500529
+      },
+      {
+        "region": "portugal_mainland",
+        "year": 2018,
+        "train_years": 6,
+        "B0_mae": 96.08333333333333,
+        "B1_mae": 22.79915434624432,
+        "B1_wape": 0.17196093787236444
+      },
+      {
+        "region": "portugal_mainland",
+        "year": 2019,
+        "train_years": 7,
+        "B0_mae": 105.5,
+        "B1_mae": 25.137235037835712,
+        "B1_wape": 0.17168288016734692
+      },
+      {
+        "region": "portugal_mainland",
+        "year": 2020,
+        "train_years": 8,
+        "B0_mae": 79.0,
+        "B1_mae": 32.27786428595695,
+        "B1_wape": 0.2766674081653453
+      },
+      {
+        "region": "portugal_mainland",
+        "year": 2021,
+        "train_years": 9,
+        "B0_mae": 86.33333333333333,
+        "B1_mae": 28.935449881630152,
+        "B1_wape": 0.24748781081935983
+      },
+      {
+        "region": "portugal_mainland",
+        "year": 2022,
+        "train_years": 10,
+        "B0_mae": 83.91666666666667,
+        "B1_mae": 78.52281658376437,
+        "B1_wape": 0.5649123495234846
+      },
+      {
+        "region": "portugal_mainland",
+        "year": 2023,
+        "train_years": 11,
+        "B0_mae": 77.25,
+        "B1_mae": 28.22400965372357,
+        "B1_wape": 0.26113193203136686
+      },
+      {
+        "region": "portugal_mainland",
+        "year": 2024,
+        "train_years": 12,
+        "B0_mae": 83.41666666666667,
+        "B1_mae": 65.09730411210087,
+        "B1_wape": 0.425009602472911
+      },
+      {
+        "region": "portugal_mainland",
+        "year": 2025,
+        "train_years": 13,
+        "B0_mae": 97.5,
+        "B1_mae": 56.1733071982107,
+        "B1_wape": 0.28298895313960054
+      },
+      {
+        "region": "uruguay",
+        "year": 2025,
+        "train_years": 3,
+        "B0_mae": 115.83333333333333,
+        "B1_mae": 42.97997311812066,
+        "B1_wape": 0.24420439271659466
+      }
+    ],
+    "n_folds": 12,
+    "B0_mean_mae": 117.0,
+    "B1_mean_mae": 55.694040548146624,
+    "B1_beats_B0_folds": 12
+  },
+  "geographically_held_out_regions": [
+    "uruguay"
+  ],
+  "independent_ground_validation": "not_performed",
+  "limitations": [
+    "Sensor-reference agreement is not ground truth validation.",
+    "Calibration residual bands have no guaranteed coverage under temporal or spatial dependence.",
+    "Year-block confidence intervals require at least three test years and remain unstable with few blocks.",
+    "No biome covariates or cloud/overpass denominators supplied.",
+    "Paired count provenance and archive completeness must be independently audited.",
+    "Pre-reference and unseen-region conversions are extrapolations."
+  ]
+}

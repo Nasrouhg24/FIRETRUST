@@ -1,0 +1,122 @@
+{
+  "country": "Zambia",
+  "files": {
+    "modis_2024_Zambia.csv": {
+      "sensor": "modis",
+      "year": 2024,
+      "batch_id": "03a1f7773736359eac4d6aff2e89458d0f709f23421ddcdd1a190daf9259c384",
+      "source_uri": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2024/modis_2024_Zambia.csv",
+      "accepted": 205982,
+      "rejected": 0,
+      "listed_updated": "2025-05-30 10:28:46",
+      "processing_statuses": [
+        "standard"
+      ],
+      "archive_query_status": "complete_file",
+      "coverage_status": "unknown"
+    },
+    "modis_2023_Zambia.csv": {
+      "sensor": "modis",
+      "year": 2023,
+      "batch_id": "9ca8c812f787622250910697ba3423b1076c70846e2c1db26aae70855d57e211",
+      "source_uri": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2023/modis_2023_Zambia.csv",
+      "accepted": 191327,
+      "rejected": 0,
+      "listed_updated": "2024-06-03 14:07:30",
+      "processing_statuses": [
+        "standard"
+      ],
+      "archive_query_status": "complete_file",
+      "coverage_status": "unknown"
+    },
+    "modis_2022_Zambia.csv": {
+      "sensor": "modis",
+      "year": 2022,
+      "batch_id": "11296d19a4a9480ed1d80ef77d03dd86ec568fec09e15b49878ac785a1aef45f",
+      "source_uri": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2022/modis_2022_Zambia.csv",
+      "accepted": 186677,
+      "rejected": 0,
+      "listed_updated": "2023-12-14 11:15:07",
+      "processing_statuses": [
+        "standard"
+      ],
+      "archive_query_status": "complete_file",
+      "coverage_status": "unknown"
+    },
+    "modis_2025_Zambia.csv": {
+      "sensor": "modis",
+      "year": 2025,
+      "batch_id": "ad4e11bc0af10f6568af338f18e5baedaa2dda981ad6d4d269adaa50851d0461",
+      "source_uri": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2025/modis_2025_Zambia.csv",
+      "accepted": 186254,
+      "rejected": 0,
+      "listed_updated": "2026-10-10 08:56:42",
+      "processing_statuses": [
+        "standard"
+      ],
+      "archive_query_status": "complete_file",
+      "coverage_status": "unknown"
+    },
+    "viirs-snpp_2022_Zambia.csv": {
+      "sensor": "viirs-snpp",
+      "year": 2022,
+      "batch_id": "638165e4dedcc2dc52c39a9546429155d2ff0f7d6bee9d7998444f5cc268ede3",
+      "source_uri": "https://firms.modaps.eosdis.nasa.gov/data/country/viirs-snpp/2022/viirs-snpp_2022_Zambia.csv",
+      "accepted": 763731,
+      "rejected": 0,
+      "listed_updated": "2025-06-19 14:26:00",
+      "processing_statuses": [
+        "standard"
+      ],
+      "archive_query_status": "complete_file",
+      "coverage_status": "unknown"
+    },
+    "viirs-snpp_2025_Zambia.csv": {
+      "sensor": "viirs-snpp",
+      "year": 2025,
+      "batch_id": "8d941368c5240dce4d8e31eda186f1c1d6a9e53b0ce8d1befaab4e5448a4ab0f",
+      "source_uri": "https://firms.modaps.eosdis.nasa.gov/data/country/viirs-snpp/2025/viirs-snpp_2025_Zambia.csv",
+      "accepted": 862158,
+      "rejected": 0,
+      "listed_updated": "2026-10-10 08:57:09",
+      "processing_statuses": [
+        "standard"
+      ],
+      "archive_query_status": "complete_file",
+      "coverage_status": "unknown"
+    },
+    "viirs-snpp_2024_Zambia.csv": {
+      "sensor": "viirs-snpp",
+      "year": 2024,
+      "batch_id": "aa50fda58208ffff371218a5cde3a0aa02460e71cb391cfa31afa88c82433184",
+      "source_uri": "https://firms.modaps.eosdis.nasa.gov/data/country/viirs-snpp/2024/viirs-snpp_2024_Zambia.csv",
+      "accepted": 775316,
+      "rejected": 0,
+      "listed_updated": "2025-06-19 13:28:01",
+      "processing_statuses": [
+        "standard"
+      ],
+      "archive_query_status": "complete_file",
+      "coverage_status": "unknown"
+    },
+    "viirs-snpp_2023_Zambia.csv": {
+      "sensor": "viirs-snpp",
+      "year": 2023,
+      "batch_id": "d9994a7e629297f49f1c9161db3d4b6bcbe83ae7b566d961a9a2c9d6fd55a382",
+      "source_uri": "https://firms.modaps.eosdis.nasa.gov/data/country/viirs-snpp/2023/viirs-snpp_2023_Zambia.csv",
+      "accepted": 867429,
+      "rejected": 0,
+      "listed_updated": "2025-06-19 14:01:47",
+      "processing_statuses": [
+        "standard"
+      ],
+      "archive_query_status": "complete_file",
+      "coverage_status": "unknown"
+    }
+  },
+  "index_sha256": "a85c319c545f0004ffaa659e5063ed0547cc59c409e16d2a54fdcf37e7a33f8c",
+  "source": "https://firms.modaps.eosdis.nasa.gov/data/country/",
+  "created_at": "2026-11-14T20:22:51.641255+00:00",
+  "unavailable": [],
+  "failures": []
+}

@@ -1,0 +1,96 @@
+{
+  "modis_satellite": "T",
+  "model_id": "0ff44b414836ca5c",
+  "selected_model": "B1_shrunk_ratio",
+  "refit": false,
+  "regions": {
+    "greece": {
+      "months": 48,
+      "status": "extrapolated_unseen_region",
+      "B0_raw": {
+        "mae": 174.20833333333334,
+        "wape": 0.8234367306745446,
+        "signed_bias": -174.20833333333334,
+        "peak_month_concordance": 0.25,
+        "annual_total_bias": {
+          "greece|2022": -2451.0,
+          "greece|2023": -2137.0,
+          "greece|2024": -1944.0,
+          "greece|2025": -1830.0
+        }
+      },
+      "registered_model": {
+        "mae": 130.57916895793235,
+        "wape": 0.6172132063004189,
+        "signed_bias": -93.22466432957565,
+        "peak_month_concordance": 0.25,
+        "annual_total_bias": {
+          "greece|2022": -1631.4976629089908,
+          "greece|2023": -508.8353038218311,
+          "greece|2024": -1180.8655485290076,
+          "greece|2025": -1153.5853725598022
+        }
+      },
+      "total_viirs": 10155
+    },
+    "chile": {
+      "months": 48,
+      "status": "extrapolated_unseen_region",
+      "B0_raw": {
+        "mae": 741.7083333333334,
+        "wape": 0.7584091344822445,
+        "signed_bias": -741.7083333333334,
+        "peak_month_concordance": 0.5,
+        "annual_total_bias": {
+          "chile|2022": -9438.0,
+          "chile|2023": -10415.0,
+          "chile|2024": -7206.0,
+          "chile|2025": -8543.0
+        }
+      },
+      "registered_model": {
+        "mae": 447.8753723306754,
+        "wape": 0.45796003391075174,
+        "signed_bias": -229.47420607643662,
+        "peak_month_concordance": 0.5,
+        "annual_total_bias": {
+          "chile|2022": -3996.331042067638,
+          "chile|2023": -752.2436073687106,
+          "chile|2024": -2193.5941710200714,
+          "chile|2025": -4072.5930712125382
+        }
+      },
+      "total_viirs": 46943
+    },
+    "zambia": {
+      "months": 48,
+      "status": "extrapolated_unseen_region",
+      "B0_raw": {
+        "mae": 30939.458333333332,
+        "wape": 0.9150888288590273,
+        "signed_bias": -30939.458333333332,
+        "peak_month_concordance": 0.5,
+        "annual_total_bias": {
+          "zambia|2022": -339309.0,
+          "zambia|2023": -398796.0,
+          "zambia|2024": -351920.0,
+          "zambia|2025": -395069.0
+        }
+      },
+      "registered_model": {
+        "mae": 24715.413962973147,
+        "wape": 0.7310017833691814,
+        "signed_bias": -24715.413962973147,
+        "peak_month_concordance": 0.5,
+        "annual_total_bias": {
+          "zambia|2022": -254837.38740720376,
+          "zambia|2023": -319870.12015397305,
+          "zambia|2024": -278212.4855650261,
+          "zambia|2025": -333419.87709650816
+        }
+      },
+      "total_viirs": 1622896
+    }
+  },
+  "status": "transfer_to_unseen_regions_vs_sensor_reference_not_ground_truth"
+}

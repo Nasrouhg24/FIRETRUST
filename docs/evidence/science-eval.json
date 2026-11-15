@@ -1,0 +1,4128 @@
+{
+  "created_at": "2026-11-14T21:13:42.686340+00:00",
+  "status": "exploratory_reanalysis_of_previously_inspected_data",
+  "pairs_sha256": "7fe6aad532368aaafbf5e360f9d9e98cd4003cb771769ab3becffb6fcb33744b",
+  "n_pairs": 720,
+  "provenance": {
+    "portugal_mainland": {
+      "scope": {
+        "country": "Portugal",
+        "bbox": "-9.6,36.8,-6,42.2"
+      },
+      "snapshot_id": "e332e0eb4d342a42bf3b44738994a97571b26b1171befb94753557cc4fc1d273"
+    },
+    "uruguay": {
+      "scope": {
+        "country": "Uruguay",
+        "bbox": "-58.5,-35,-53,-30"
+      },
+      "snapshot_id": "e332e0eb4d342a42bf3b44738994a97571b26b1171befb94753557cc4fc1d273"
+    },
+    "greece": {
+      "scope": {
+        "country": "Greece"
+      },
+      "snapshot_id": "e332e0eb4d342a42bf3b44738994a97571b26b1171befb94753557cc4fc1d273"
+    },
+    "chile": {
+      "scope": {
+        "country": "Chile"
+      },
+      "snapshot_id": "e332e0eb4d342a42bf3b44738994a97571b26b1171befb94753557cc4fc1d273"
+    },
+    "zambia": {
+      "scope": {
+        "country": "Zambia"
+      },
+      "snapshot_id": "e332e0eb4d342a42bf3b44738994a97571b26b1171befb94753557cc4fc1d273"
+    }
+  },
+  "months_by_region_satellite": {
+    "portugal_mainland:T": 168,
+    "portugal_mainland:A": 168,
+    "uruguay:T": 48,
+    "uruguay:A": 48,
+    "greece:T": 48,
+    "greece:A": 48,
+    "chile:T": 48,
+    "chile:A": 48,
+    "zambia:T": 48,
+    "zambia:A": 48
+  },
+  "nested_temporal_portugal": {
+    "region": "portugal_mainland",
+    "protocol": "nested rolling origin; inner selection over satellite x candidate on years < outer year",
+    "folds": [
+      {
+        "outer_year": 2016,
+        "selected": "A:loglinear",
+        "inner_scores": {
+          "T:raw": 171.91666666666666,
+          "T:global_ratio": 79.80683192261183,
+          "T:seasonal_ratio_B1": 76.09097387574053,
+          "T:linear": 45.69350751499237,
+          "T:loglinear": 49.59335677423948,
+          "T:climatology": 126.47222222222223,
+          "A:raw": 166.16666666666666,
+          "A:global_ratio": 72.26754385964911,
+          "A:seasonal_ratio_B1": 83.62110416156024,
+          "A:linear": 42.991053040602715,
+          "A:loglinear": 40.73794640568718,
+          "A:climatology": 126.47222222222223
+        },
+        "outer_mae_selected": 30.911112656957737,
+        "outer_mae_fixed": {
+          "T:raw": 171.66666666666666,
+          "T:global_ratio": 203.16554265997488,
+          "T:seasonal_ratio_B1": 90.40993367350579,
+          "T:linear": 82.73624487333562,
+          "T:loglinear": 46.143140747102855,
+          "T:climatology": 172.64583333333334,
+          "A:raw": 165.16666666666666,
+          "A:global_ratio": 147.64056824078878,
+          "A:seasonal_ratio_B1": 67.63295490270765,
+          "A:linear": 49.061603999865646,
+          "A:loglinear": 30.911112656957737,
+          "A:climatology": 172.64583333333334
+        },
+        "band_coverage": {
+          "absolute": 0.9166666666666666,
+          "multiplicative": 0.9166666666666666
+        },
+        "band_mean_width": {
+          "absolute": 211.03467348302033,
+          "multiplicative": 217.48011978947605
+        },
+        "calibration_residuals": 12
+      },
+      {
+        "outer_year": 2017,
+        "selected": "A:loglinear",
+        "inner_scores": {
+          "T:raw": 171.79166666666666,
+          "T:global_ratio": 141.48618729129336,
+          "T:seasonal_ratio_B1": 83.25045377462317,
+          "T:linear": 64.21487619416399,
+          "T:loglinear": 47.868248760671165,
+          "T:climatology": 149.55902777777777,
+          "A:raw": 165.66666666666666,
+          "A:global_ratio": 109.95405605021895,
+          "A:seasonal_ratio_B1": 75.62702953213395,
+          "A:linear": 46.02632852023418,
+          "A:loglinear": 35.82452953132246,
+          "A:climatology": 149.55902777777777
+        },
+        "outer_mae_selected": 74.58757892575449,
+        "outer_mae_fixed": {
+          "T:raw": 232.08333333333334,
+          "T:global_ratio": 267.54406428201145,
+          "T:seasonal_ratio_B1": 285.3263198437796,
+          "T:linear": 121.60970287995,
+          "T:loglinear": 123.71781038077832,
+          "T:climatology": 217.26666666666665,
+          "A:raw": 247.83333333333334,
+          "A:global_ratio": 118.5777248172863,
+          "A:seasonal_ratio_B1": 136.92731329590416,
+          "A:linear": 68.47857051083265,
+          "A:loglinear": 74.58757892575449,
+          "A:climatology": 217.26666666666665
+        },
+        "band_coverage": {
+          "absolute": 0.8333333333333334,
+          "multiplicative": 1.0
+        },
+        "band_mean_width": {
+          "absolute": 224.36159564909747,
+          "multiplicative": 535.8643079950247
+        },
+        "calibration_residuals": 24
+      },
+      {
+        "outer_year": 2018,
+        "selected": "A:loglinear",
+        "inner_scores": {
+          "T:raw": 191.88888888888889,
+          "T:global_ratio": 183.50547962153271,
+          "T:seasonal_ratio_B1": 150.6090757976753,
+          "T:linear": 83.346485089426,
+          "T:loglinear": 73.15143596737356,
+          "T:climatology": 172.12824074074072,
+          "A:raw": 193.05555555555554,
+          "A:global_ratio": 112.82861230590807,
+          "A:seasonal_ratio_B1": 96.0604574533907,
+          "A:linear": 53.510409183767,
+          "A:loglinear": 48.74554599613314,
+          "A:climatology": 172.12824074074072
+        },
+        "outer_mae_selected": 37.42834177914607,
+        "outer_mae_fixed": {
+          "T:raw": 99.75,
+          "T:global_ratio": 66.28291925465838,
+          "T:seasonal_ratio_B1": 32.06624027815847,
+          "T:linear": 70.33336574453794,
+          "T:loglinear": 54.02147319590577,
+          "T:climatology": 161.0,
+          "A:raw": 96.08333333333333,
+          "A:global_ratio": 44.75981653562069,
+          "A:seasonal_ratio_B1": 22.79915434624432,
+          "A:linear": 49.47453573353902,
+          "A:loglinear": 37.42834177914607,
+          "A:climatology": 161.0
+        },
+        "band_coverage": {
+          "absolute": 0.9166666666666666,
+          "multiplicative": 0.75
+        },
+        "band_mean_width": {
+          "absolute": 223.8407587347614,
+          "multiplicative": 164.7930158828997
+        },
+        "calibration_residuals": 36
+      },
+      {
+        "outer_year": 2019,
+        "selected": "A:loglinear",
+        "inner_scores": {
+          "T:raw": 168.85416666666666,
+          "T:global_ratio": 154.19983952981414,
+          "T:seasonal_ratio_B1": 120.9733669177961,
+          "T:linear": 80.09320525320399,
+          "T:loglinear": 68.36894527450661,
+          "T:climatology": 169.34618055555555,
+          "A:raw": 168.8125,
+          "A:global_ratio": 95.81141336333623,
+          "A:seasonal_ratio_B1": 77.7451316766041,
+          "A:linear": 52.50144082121001,
+          "A:loglinear": 45.916244941886376,
+          "A:climatology": 169.34618055555555
+        },
+        "outer_mae_selected": 38.967916889216845,
+        "outer_mae_fixed": {
+          "T:raw": 109.75,
+          "T:global_ratio": 46.90988684030825,
+          "T:seasonal_ratio_B1": 34.44846320594942,
+          "T:linear": 46.84861313936549,
+          "T:loglinear": 39.63842218604841,
+          "T:climatology": 133.38095238095238,
+          "A:raw": 105.5,
+          "A:global_ratio": 45.30398224135612,
+          "A:seasonal_ratio_B1": 25.137235037835712,
+          "A:linear": 42.27142072859099,
+          "A:loglinear": 38.967916889216845,
+          "A:climatology": 133.38095238095238
+        },
+        "band_coverage": {
+          "absolute": 1.0,
+          "multiplicative": 0.8333333333333334
+        },
+        "band_mean_width": {
+          "absolute": 235.2710501152999,
+          "multiplicative": 190.06078172484925
+        },
+        "calibration_residuals": 48
+      },
+      {
+        "outer_year": 2020,
+        "selected": "A:loglinear",
+        "inner_scores": {
+          "T:raw": 157.03333333333333,
+          "T:global_ratio": 132.74184899191295,
+          "T:seasonal_ratio_B1": 103.66838617542676,
+          "T:linear": 73.4442868304363,
+          "T:loglinear": 62.62284065681497,
+          "T:climatology": 162.15313492063493,
+          "A:raw": 156.15,
+          "A:global_ratio": 85.7099271389402,
+          "A:seasonal_ratio_B1": 67.22355234885042,
+          "A:linear": 50.45543680268621,
+          "A:loglinear": 44.526579331352465,
+          "A:climatology": 162.15313492063493
+        },
+        "outer_mae_selected": 42.382407270657076,
+        "outer_mae_fixed": {
+          "T:raw": 80.16666666666667,
+          "T:global_ratio": 30.707955274493628,
+          "T:seasonal_ratio_B1": 24.82329857929177,
+          "T:linear": 52.49553470865495,
+          "T:loglinear": 55.517451796072415,
+          "T:climatology": 128.16666666666666,
+          "A:raw": 79.0,
+          "A:global_ratio": 43.57597173144876,
+          "A:seasonal_ratio_B1": 32.27786428595695,
+          "A:linear": 39.30930822289039,
+          "A:loglinear": 42.382407270657076,
+          "A:climatology": 128.16666666666666
+        },
+        "band_coverage": {
+          "absolute": 0.9166666666666666,
+          "multiplicative": 1.0
+        },
+        "band_mean_width": {
+          "absolute": 199.93867195428527,
+          "multiplicative": 164.84830053976046
+        },
+        "calibration_residuals": 60
+      },
+      {
+        "outer_year": 2021,
+        "selected": "A:loglinear",
+        "inner_scores": {
+          "T:raw": 144.2222222222222,
+          "T:global_ratio": 115.73620003900974,
+          "T:seasonal_ratio_B1": 90.52753824273759,
+          "T:linear": 69.95282814347273,
+          "T:loglinear": 61.43860918002454,
+          "T:climatology": 156.48872354497354,
+          "A:raw": 143.29166666666666,
+          "A:global_ratio": 78.68760123769162,
+          "A:seasonal_ratio_B1": 61.39927100503485,
+          "A:linear": 48.59774870605357,
+          "A:loglinear": 44.16921732123657,
+          "A:climatology": 156.48872354497354
+        },
+        "outer_mae_selected": 26.504211912411705,
+        "outer_mae_fixed": {
+          "T:raw": 86.25,
+          "T:global_ratio": 30.15456431535269,
+          "T:seasonal_ratio_B1": 47.36897334258515,
+          "T:linear": 40.94751376093494,
+          "T:loglinear": 34.68583986213146,
+          "T:climatology": 134.71296296296296,
+          "A:raw": 86.33333333333333,
+          "A:global_ratio": 36.293099331423115,
+          "A:seasonal_ratio_B1": 28.935449881630152,
+          "A:linear": 32.478900790402975,
+          "A:loglinear": 26.504211912411705,
+          "A:climatology": 134.71296296296296
+        },
+        "band_coverage": {
+          "absolute": 1.0,
+          "multiplicative": 0.8333333333333334
+        },
+        "band_mean_width": {
+          "absolute": 206.58005187849452,
+          "multiplicative": 146.84733587037292
+        },
+        "calibration_residuals": 72
+      },
+      {
+        "outer_year": 2022,
+        "selected": "A:loglinear",
+        "inner_scores": {
+          "T:raw": 135.94047619047618,
+          "T:global_ratio": 103.5102520784873,
+          "T:seasonal_ratio_B1": 84.36202897128724,
+          "T:linear": 65.80921180311019,
+          "T:loglinear": 57.6167849917541,
+          "T:climatology": 153.37790060468632,
+          "A:raw": 135.1547619047619,
+          "A:global_ratio": 72.63124382251041,
+          "A:seasonal_ratio_B1": 56.76158227311989,
+          "A:linear": 46.295056146674916,
+          "A:loglinear": 41.645645119975875,
+          "A:climatology": 153.37790060468632
+        },
+        "outer_mae_selected": 48.06219748379551,
+        "outer_mae_fixed": {
+          "T:raw": 82.0,
+          "T:global_ratio": 97.60845709570957,
+          "T:seasonal_ratio_B1": 71.01394705415827,
+          "T:linear": 76.83105545286469,
+          "T:loglinear": 67.98149263536179,
+          "T:climatology": 138.29166666666666,
+          "A:raw": 83.91666666666667,
+          "A:global_ratio": 81.47764878569522,
+          "A:seasonal_ratio_B1": 78.52281658376437,
+          "A:linear": 54.205715195052484,
+          "A:loglinear": 48.06219748379551,
+          "A:climatology": 138.29166666666666
+        },
+        "band_coverage": {
+          "absolute": 0.8333333333333334,
+          "multiplicative": 0.8333333333333334
+        },
+        "band_mean_width": {
+          "absolute": 183.9781058315117,
+          "multiplicative": 186.55340329984585
+        },
+        "calibration_residuals": 84
+      },
+      {
+        "outer_year": 2023,
+        "selected": "A:loglinear",
+        "inner_scores": {
+          "T:raw": 129.19791666666669,
+          "T:global_ratio": 102.77252770564009,
+          "T:seasonal_ratio_B1": 82.69351873164612,
+          "T:linear": 67.1869422593295,
+          "T:loglinear": 58.91237344720507,
+          "T:climatology": 151.49212136243386,
+          "A:raw": 128.75,
+          "A:global_ratio": 73.73704444290851,
+          "A:seasonal_ratio_B1": 59.48173656195044,
+          "A:linear": 47.28388852772211,
+          "A:loglinear": 42.44771416545333,
+          "A:climatology": 151.49212136243386
+        },
+        "outer_mae_selected": 29.434573868867528,
+        "outer_mae_fixed": {
+          "T:raw": 81.58333333333333,
+          "T:global_ratio": 44.823539479689636,
+          "T:seasonal_ratio_B1": 32.0490028100924,
+          "T:linear": 45.706210426882876,
+          "T:loglinear": 35.72470470423604,
+          "T:climatology": 124.0,
+          "A:raw": 77.25,
+          "A:global_ratio": 42.19470438111442,
+          "A:seasonal_ratio_B1": 28.22400965372357,
+          "A:linear": 36.12230610021198,
+          "A:loglinear": 29.434573868867528,
+          "A:climatology": 124.0
+        },
+        "band_coverage": {
+          "absolute": 0.9166666666666666,
+          "multiplicative": 0.9166666666666666
+        },
+        "band_mean_width": {
+          "absolute": 194.847727726976,
+          "multiplicative": 138.73889335487965
+        },
+        "calibration_residuals": 96
+      },
+      {
+        "outer_year": 2024,
+        "selected": "A:loglinear",
+        "inner_scores": {
+          "T:raw": 123.90740740740742,
+          "T:global_ratio": 96.33375123609004,
+          "T:seasonal_ratio_B1": 77.06635029591793,
+          "T:linear": 64.80019427794655,
+          "T:loglinear": 56.3359658090974,
+          "T:climatology": 148.43744121105232,
+          "A:raw": 123.02777777777777,
+          "A:global_ratio": 70.23233999159805,
+          "A:seasonal_ratio_B1": 56.00865579436967,
+          "A:linear": 46.04371270244321,
+          "A:loglinear": 41.001809688054905,
+          "A:climatology": 148.43744121105232
+        },
+        "outer_mae_selected": 41.899450516130905,
+        "outer_mae_fixed": {
+          "T:raw": 82.25,
+          "T:global_ratio": 109.74220069000951,
+          "T:seasonal_ratio_B1": 99.68326469616579,
+          "T:linear": 61.19454351813304,
+          "T:loglinear": 37.01453480428675,
+          "T:climatology": 186.01388888888889,
+          "A:raw": 83.41666666666667,
+          "A:global_ratio": 93.68160425618989,
+          "A:seasonal_ratio_B1": 65.09730411210087,
+          "A:linear": 51.362300553193826,
+          "A:loglinear": 41.899450516130905,
+          "A:climatology": 186.01388888888889
+        },
+        "band_coverage": {
+          "absolute": 1.0,
+          "multiplicative": 0.5833333333333334
+        },
+        "band_mean_width": {
+          "absolute": 201.16062451412816,
+          "multiplicative": 187.36726477682546
+        },
+        "calibration_residuals": 108
+      },
+      {
+        "outer_year": 2025,
+        "selected": "A:loglinear",
+        "inner_scores": {
+          "T:raw": 119.74166666666667,
+          "T:global_ratio": 97.67459618148199,
+          "T:seasonal_ratio_B1": 79.32804173594272,
+          "T:linear": 64.43962920196519,
+          "T:loglinear": 54.40382270861634,
+          "T:climatology": 152.19508597883598,
+          "A:raw": 119.06666666666668,
+          "A:global_ratio": 72.57726641805723,
+          "A:seasonal_ratio_B1": 56.9175206261428,
+          "A:linear": 46.575571487518275,
+          "A:loglinear": 41.0915737708625,
+          "A:climatology": 152.19508597883598
+        },
+        "outer_mae_selected": 49.730892007701364,
+        "outer_mae_fixed": {
+          "T:raw": 96.66666666666667,
+          "T:global_ratio": 156.74413570925196,
+          "T:seasonal_ratio_B1": 59.25181105525607,
+          "T:linear": 65.64747623744414,
+          "T:loglinear": 47.81711921088566,
+          "T:climatology": 152.8846153846154,
+          "A:raw": 97.5,
+          "A:global_ratio": 130.48465428957374,
+          "A:seasonal_ratio_B1": 56.1733071982107,
+          "A:linear": 59.42352501075667,
+          "A:loglinear": 49.730892007701364,
+          "A:climatology": 152.8846153846154
+        },
+        "band_coverage": {
+          "absolute": 0.8333333333333334,
+          "multiplicative": 1.0
+        },
+        "band_mean_width": {
+          "absolute": 195.3015941745247,
+          "multiplicative": 283.4365024710043
+        },
+        "calibration_residuals": 120
+      }
+    ],
+    "n_outer_folds": 10,
+    "selection_frequency": {
+      "A:loglinear": 10
+    },
+    "mean_outer_mae_selected": 41.99086833106392,
+    "mean_outer_mae_fixed": {
+      "A:climatology": 154.8363252950753,
+      "A:global_ratio": 78.39897746104971,
+      "A:linear": 48.218818684533666,
+      "A:loglinear": 41.99086833106392,
+      "A:raw": 112.2,
+      "A:seasonal_ratio_B1": 54.172740929807844,
+      "T:climatology": 154.8363252950753,
+      "T:global_ratio": 105.36832656014599,
+      "T:linear": 66.43502607421037,
+      "T:loglinear": 54.226198952280946,
+      "T:raw": 112.21666666666667,
+      "T:seasonal_ratio_B1": 77.64412545389428
+    },
+    "mean_band_coverage": {
+      "absolute": 0.9166666666666666,
+      "multiplicative": 0.8666666666666668
+    },
+    "status": "exploratory_reanalysis_of_previously_inspected_data"
+  },
+  "paired_satellite_B1": {
+    "candidate": "seasonal_ratio_B1",
+    "folds": [
+      {
+        "region": "chile",
+        "year": 2025,
+        "terra_mae": 276.4865725611516,
+        "aqua_mae": 260.67064302497886,
+        "difference_terra_minus_aqua": 15.815929536172746
+      },
+      {
+        "region": "greece",
+        "year": 2025,
+        "terra_mae": 68.61431674876836,
+        "aqua_mae": 37.56035752792446,
+        "difference_terra_minus_aqua": 31.0539592208439
+      },
+      {
+        "region": "portugal_mainland",
+        "year": 2015,
+        "terra_mae": 76.09097387574053,
+        "aqua_mae": 83.62110416156024,
+        "difference_terra_minus_aqua": -7.530130285819709
+      },
+      {
+        "region": "portugal_mainland",
+        "year": 2016,
+        "terra_mae": 90.40993367350579,
+        "aqua_mae": 67.63295490270765,
+        "difference_terra_minus_aqua": 22.776978770798138
+      },
+      {
+        "region": "portugal_mainland",
+        "year": 2017,
+        "terra_mae": 285.3263198437796,
+        "aqua_mae": 136.92731329590416,
+        "difference_terra_minus_aqua": 148.39900654787542
+      },
+      {
+        "region": "portugal_mainland",
+        "year": 2018,
+        "terra_mae": 32.06624027815847,
+        "aqua_mae": 22.79915434624432,
+        "difference_terra_minus_aqua": 9.26708593191415
+      },
+      {
+        "region": "portugal_mainland",
+        "year": 2019,
+        "terra_mae": 34.44846320594942,
+        "aqua_mae": 25.137235037835712,
+        "difference_terra_minus_aqua": 9.311228168113711
+      },
+      {
+        "region": "portugal_mainland",
+        "year": 2020,
+        "terra_mae": 24.82329857929177,
+        "aqua_mae": 32.27786428595695,
+        "difference_terra_minus_aqua": -7.454565706665182
+      },
+      {
+        "region": "portugal_mainland",
+        "year": 2021,
+        "terra_mae": 47.36897334258515,
+        "aqua_mae": 28.935449881630152,
+        "difference_terra_minus_aqua": 18.433523460954998
+      },
+      {
+        "region": "portugal_mainland",
+        "year": 2022,
+        "terra_mae": 71.01394705415827,
+        "aqua_mae": 78.52281658376437,
+        "difference_terra_minus_aqua": -7.508869529606102
+      },
+      {
+        "region": "portugal_mainland",
+        "year": 2023,
+        "terra_mae": 32.0490028100924,
+        "aqua_mae": 28.22400965372357,
+        "difference_terra_minus_aqua": 3.8249931563688264
+      },
+      {
+        "region": "portugal_mainland",
+        "year": 2024,
+        "terra_mae": 99.68326469616579,
+        "aqua_mae": 65.09730411210087,
+        "difference_terra_minus_aqua": 34.58596058406492
+      },
+      {
+        "region": "portugal_mainland",
+        "year": 2025,
+        "terra_mae": 59.25181105525607,
+        "aqua_mae": 56.1733071982107,
+        "difference_terra_minus_aqua": 3.0785038570453693
+      },
+      {
+        "region": "uruguay",
+        "year": 2025,
+        "terra_mae": 116.77878907630243,
+        "aqua_mae": 42.97997311812066,
+        "difference_terra_minus_aqua": 73.79881595818176
+      },
+      {
+        "region": "zambia",
+        "year": 2025,
+        "terra_mae": 15089.217654291422,
+        "aqua_mae": 2326.793016763873,
+        "difference_terra_minus_aqua": 12762.424637527549
+      }
+    ],
+    "n_folds": 15,
+    "aqua_better_folds": 12,
+    "mean_difference": 874.0184704798528,
+    "median_difference": 15.815929536172746,
+    "bootstrap_mean_difference_95": [
+      10.521154822224645,
+      2578.599466785432
+    ],
+    "sign_test_p_two_sided": 0.03515625,
+    "median_terra_over_aqua_mae": 1.3704157658588452,
+    "bootstrap_median_terra_over_aqua_mae_95": [
+      1.054803678305475,
+      1.6370567430734033
+    ],
+    "note_on_mean": "Mean count difference is dominated by the highest-activity region; use the median ratio and fold counts.",
+    "caveat": "Folds share training years and are serially dependent; the bootstrap and sign test treat folds as exchangeable and therefore overstate precision. Descriptive only."
+  },
+  "paired_satellite_loglinear": {
+    "candidate": "loglinear",
+    "folds": [
+      {
+        "region": "chile",
+        "year": 2025,
+        "terra_mae": 301.1996474895828,
+        "aqua_mae": 190.61068660483951,
+        "difference_terra_minus_aqua": 110.58896088474327
+      },
+      {
+        "region": "greece",
+        "year": 2025,
+        "terra_mae": 54.51320837033264,
+        "aqua_mae": 57.99163549134746,
+        "difference_terra_minus_aqua": -3.4784271210148177
+      },
+      {
+        "region": "portugal_mainland",
+        "year": 2015,
+        "terra_mae": 49.59335677423948,
+        "aqua_mae": 40.73794640568718,
+        "difference_terra_minus_aqua": 8.855410368552299
+      },
+      {
+        "region": "portugal_mainland",
+        "year": 2016,
+        "terra_mae": 46.143140747102855,
+        "aqua_mae": 30.911112656957737,
+        "difference_terra_minus_aqua": 15.232028090145118
+      },
+      {
+        "region": "portugal_mainland",
+        "year": 2017,
+        "terra_mae": 123.71781038077832,
+        "aqua_mae": 74.58757892575449,
+        "difference_terra_minus_aqua": 49.13023145502383
+      },
+      {
+        "region": "portugal_mainland",
+        "year": 2018,
+        "terra_mae": 54.02147319590577,
+        "aqua_mae": 37.42834177914607,
+        "difference_terra_minus_aqua": 16.593131416759697
+      },
+      {
+        "region": "portugal_mainland",
+        "year": 2019,
+        "terra_mae": 39.63842218604841,
+        "aqua_mae": 38.967916889216845,
+        "difference_terra_minus_aqua": 0.6705052968315641
+      },
+      {
+        "region": "portugal_mainland",
+        "year": 2020,
+        "terra_mae": 55.517451796072415,
+        "aqua_mae": 42.382407270657076,
+        "difference_terra_minus_aqua": 13.135044525415339
+      },
+      {
+        "region": "portugal_mainland",
+        "year": 2021,
+        "terra_mae": 34.68583986213146,
+        "aqua_mae": 26.504211912411705,
+        "difference_terra_minus_aqua": 8.181627949719754
+      },
+      {
+        "region": "portugal_mainland",
+        "year": 2022,
+        "terra_mae": 67.98149263536179,
+        "aqua_mae": 48.06219748379551,
+        "difference_terra_minus_aqua": 19.91929515156628
+      },
+      {
+        "region": "portugal_mainland",
+        "year": 2023,
+        "terra_mae": 35.72470470423604,
+        "aqua_mae": 29.434573868867528,
+        "difference_terra_minus_aqua": 6.290130835368512
+      },
+      {
+        "region": "portugal_mainland",
+        "year": 2024,
+        "terra_mae": 37.01453480428675,
+        "aqua_mae": 41.899450516130905,
+        "difference_terra_minus_aqua": -4.884915711844158
+      },
+      {
+        "region": "portugal_mainland",
+        "year": 2025,
+        "terra_mae": 47.81711921088566,
+        "aqua_mae": 49.730892007701364,
+        "difference_terra_minus_aqua": -1.9137727968157066
+      },
+      {
+        "region": "uruguay",
+        "year": 2025,
+        "terra_mae": 104.03390610023968,
+        "aqua_mae": 27.631115376161954,
+        "difference_terra_minus_aqua": 76.40279072407772
+      },
+      {
+        "region": "zambia",
+        "year": 2025,
+        "terra_mae": 15928.598075921733,
+        "aqua_mae": 6100.656019650374,
+        "difference_terra_minus_aqua": 9827.942056271359
+      }
+    ],
+    "n_folds": 15,
+    "aqua_better_folds": 12,
+    "mean_difference": 676.1776064893259,
+    "median_difference": 13.135044525415339,
+    "bootstrap_mean_difference_95": [
+      10.75288064251288,
+      1989.0132818922114
+    ],
+    "sign_test_p_two_sided": 0.03515625,
+    "median_terra_over_aqua_mae": 1.3099173777821067,
+    "bootstrap_median_terra_over_aqua_mae_95": [
+      1.0172065984111434,
+      1.5801823751572146
+    ],
+    "note_on_mean": "Mean count difference is dominated by the highest-activity region; use the median ratio and fold counts.",
+    "caveat": "Folds share training years and are serially dependent; the bootstrap and sign test treat folds as exchangeable and therefore overstate precision. Descriptive only."
+  },
+  "loro_aqua": {
+    "satellite": "A",
+    "years": [
+      2022,
+      2025
+    ],
+    "protocol": "leave one region out, same calendar period; nested inner LORO for band calibration",
+    "regions": {
+      "chile": {
+        "months": 48,
+        "train_regions": [
+          "greece",
+          "portugal_mainland",
+          "uruguay",
+          "zambia"
+        ],
+        "domain": {
+          "train_modis_range": [
+            0.0,
+            49171.0
+          ],
+          "test_modis_range": [
+            19.0,
+            2870.0
+          ],
+          "fraction_test_months_outside_train_range": 0.0,
+          "pooled_ratio_train": 3.4728102028164023,
+          "pooled_ratio_test_observed": 2.9974458846816936
+        },
+        "raw": {
+          "n": 48,
+          "mae": 651.7083333333334,
+          "signed_bias": -651.7083333333334,
+          "wape": 0.6663826342585689,
+          "total_ratio_pred_over_obs": 0.3336173657414311,
+          "median_log_ratio": -1.2752735870278127,
+          "by_activity": {
+            "modis_10_100": {
+              "n": 7,
+              "mae": 207.85714285714286,
+              "signed_bias": -207.85714285714286,
+              "wape": 0.8092324805339266,
+              "total_ratio_pred_over_obs": 0.19076751946607343,
+              "median_log_ratio": -1.6770965609079151
+            },
+            "modis_100_1000": {
+              "n": 40,
+              "mae": 692.25,
+              "signed_bias": -692.25,
+              "wape": 0.6898699486770641,
+              "total_ratio_pred_over_obs": 0.31013005132293586,
+              "median_log_ratio": -1.1868549482586794
+            },
+            "modis_1000_inf": {
+              "n": 1,
+              "mae": 2137.0,
+              "signed_bias": -2137.0,
+              "wape": 0.426802476532854,
+              "total_ratio_pred_over_obs": 0.573197523467146,
+              "median_log_ratio": -0.5563762326588704
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 1.0
+          },
+          "band_median_width": {
+            "absolute": 23706.5,
+            "multiplicative": 2907.356366459627
+          }
+        },
+        "global_ratio": {
+          "n": 48,
+          "mae": 336.498107821864,
+          "signed_bias": 155.09751221474326,
+          "wape": 0.34407492438594617,
+          "total_ratio_pred_over_obs": 1.1585897915835732,
+          "median_log_ratio": -0.03308991320164262,
+          "by_activity": {
+            "modis_10_100": {
+              "n": 7,
+              "mae": 86.68944291913913,
+              "signed_bias": -86.68944291913913,
+              "wape": 0.3375006120322436,
+              "total_ratio_pred_over_obs": 0.6624993879677564,
+              "median_log_ratio": -0.4500940044865986
+            },
+            "modis_100_1000": {
+              "n": 40,
+              "mae": 264.6279448233106,
+              "signed_bias": 77.28853511646439,
+              "wape": 0.26371811731856154,
+              "total_ratio_pred_over_obs": 1.0770228064342662,
+              "median_log_ratio": 0.05283160512589149
+            },
+            "modis_1000_inf": {
+              "n": 1,
+              "mae": 4959.965282083074,
+              "signed_bias": 4959.965282083074,
+              "wape": 0.9906062077257988,
+              "total_ratio_pred_over_obs": 1.9906062077257987,
+              "median_log_ratio": 0.6883398453041432
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 1.0
+          },
+          "band_median_width": {
+            "absolute": 5881.408280409862,
+            "multiplicative": 3062.3971359716793
+          }
+        },
+        "seasonal_ratio_B1": {
+          "n": 48,
+          "mae": 336.498107821864,
+          "signed_bias": 155.09751221474326,
+          "wape": 0.34407492438594617,
+          "total_ratio_pred_over_obs": 1.1585897915835732,
+          "median_log_ratio": -0.03308991320164262,
+          "by_activity": {
+            "modis_10_100": {
+              "n": 7,
+              "mae": 86.68944291913913,
+              "signed_bias": -86.68944291913913,
+              "wape": 0.3375006120322436,
+              "total_ratio_pred_over_obs": 0.6624993879677564,
+              "median_log_ratio": -0.4500940044865986
+            },
+            "modis_100_1000": {
+              "n": 40,
+              "mae": 264.6279448233106,
+              "signed_bias": 77.28853511646439,
+              "wape": 0.26371811731856154,
+              "total_ratio_pred_over_obs": 1.0770228064342662,
+              "median_log_ratio": 0.05283160512589149
+            },
+            "modis_1000_inf": {
+              "n": 1,
+              "mae": 4959.965282083074,
+              "signed_bias": 4959.965282083074,
+              "wape": 0.9906062077257988,
+              "total_ratio_pred_over_obs": 1.9906062077257987,
+              "median_log_ratio": 0.6883398453041432
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 1.0
+          },
+          "band_median_width": {
+            "absolute": 5881.408280409862,
+            "multiplicative": 3062.3971359716793
+          }
+        },
+        "linear": {
+          "n": 48,
+          "mae": 781.7241926906783,
+          "signed_bias": 769.4222877059148,
+          "wape": 0.7993260177055697,
+          "total_ratio_pred_over_obs": 1.7867471147963254,
+          "median_log_ratio": 0.571484932650915,
+          "by_activity": {
+            "modis_10_100": {
+              "n": 7,
+              "mae": 607.0958327640935,
+              "signed_bias": 607.0958327640935,
+              "wape": 2.3635544100938013,
+              "total_ratio_pred_over_obs": 3.3635544100938013,
+              "median_log_ratio": 1.2364465225072199
+            },
+            "modis_100_1000": {
+              "n": 40,
+              "mae": 710.6946082235047,
+              "signed_bias": 695.9323222417885,
+              "wape": 0.7082511417843487,
+              "total_ratio_pred_over_obs": 1.6935396105852694,
+              "median_log_ratio": 0.536366876031069
+            },
+            "modis_1000_inf": {
+              "n": 1,
+              "mae": 4845.306090863714,
+              "signed_bias": 4845.306090863714,
+              "wape": 0.9677064291719022,
+              "total_ratio_pred_over_obs": 1.9677064291719022,
+              "median_log_ratio": 0.6767704088129493
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 1.0
+          },
+          "band_median_width": {
+            "absolute": 14012.479009461313,
+            "multiplicative": 30217.766874631754
+          }
+        },
+        "loglinear": {
+          "n": 48,
+          "mae": 587.9819860116696,
+          "signed_bias": 542.7318414999918,
+          "wape": 0.601221381858001,
+          "total_ratio_pred_over_obs": 1.5549523548132758,
+          "median_log_ratio": 0.36735906216972347,
+          "by_activity": {
+            "modis_10_100": {
+              "n": 7,
+              "mae": 59.70367995759743,
+              "signed_bias": 48.3501906459918,
+              "wape": 0.23243924343892214,
+              "total_ratio_pred_over_obs": 1.1882376721479102,
+              "median_log_ratio": 0.17506588970566925
+            },
+            "modis_100_1000": {
+              "n": 40,
+              "mae": 554.2608654385888,
+              "signed_bias": 501.9475526541063,
+              "wape": 0.552355239861068,
+              "total_ratio_pred_over_obs": 1.5002217874872752,
+              "median_log_ratio": 0.4114121963975006
+            },
+            "modis_1000_inf": {
+              "n": 1,
+              "mae": 5634.774951313413,
+              "signed_bias": 5634.774951313413,
+              "wape": 1.1253794590200545,
+              "total_ratio_pred_over_obs": 2.1253794590200545,
+              "median_log_ratio": 0.753844619807199
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 1.0
+          },
+          "band_median_width": {
+            "absolute": 31263.355213469993,
+            "multiplicative": 11595.97449058995
+          }
+        }
+      },
+      "greece": {
+        "months": 48,
+        "train_regions": [
+          "chile",
+          "portugal_mainland",
+          "uruguay",
+          "zambia"
+        ],
+        "domain": {
+          "train_modis_range": [
+            0.0,
+            49171.0
+          ],
+          "test_modis_range": [
+            0.0,
+            378.0
+          ],
+          "fraction_test_months_outside_train_range": 0.0,
+          "pooled_ratio_train": 3.4540808790343096,
+          "pooled_ratio_test_observed": 4.163591635916359
+        },
+        "raw": {
+          "n": 48,
+          "mae": 160.75,
+          "signed_bias": -160.75,
+          "wape": 0.7598227474150665,
+          "total_ratio_pred_over_obs": 0.24017725258493353,
+          "median_log_ratio": -1.7481529844422021,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 12,
+              "mae": 87.58333333333333,
+              "signed_bias": -87.58333333333333,
+              "wape": 0.951131221719457,
+              "total_ratio_pred_over_obs": 0.048868778280542986,
+              "median_log_ratio": -2.782898365841149
+            },
+            "modis_10_100": {
+              "n": 29,
+              "mae": 156.44827586206895,
+              "signed_bias": -156.44827586206895,
+              "wape": 0.7973637961335677,
+              "total_ratio_pred_over_obs": 0.20263620386643233,
+              "median_log_ratio": -1.6130029785985966
+            },
+            "modis_100_1000": {
+              "n": 7,
+              "mae": 304.0,
+              "signed_bias": -304.0,
+              "wape": 0.6333333333333333,
+              "total_ratio_pred_over_obs": 0.36666666666666664,
+              "median_log_ratio": -0.9536782639457754
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 0.7708333333333334
+          },
+          "band_median_width": {
+            "absolute": 23513.0,
+            "multiplicative": 299.2993333333333
+          }
+        },
+        "global_ratio": {
+          "n": 48,
+          "mae": 91.13382122698539,
+          "signed_bias": -36.05201533406915,
+          "wape": 0.43076547699609047,
+          "total_ratio_pred_over_obs": 0.8295916557326126,
+          "median_log_ratio": -0.5337509547569042,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 12,
+              "mae": 76.53996937767894,
+              "signed_bias": -76.53996937767894,
+              "wape": 0.8312032873594093,
+              "total_ratio_pred_over_obs": 0.16879671264059065,
+              "median_log_ratio": -1.755111029718259
+            },
+            "modis_10_100": {
+              "n": 29,
+              "mae": 67.63600536677032,
+              "signed_bias": -58.8774050508083,
+              "wape": 0.3447177777919753,
+              "total_ratio_pred_over_obs": 0.6999218371751421,
+              "median_log_ratio": -0.386215028524779
+            },
+            "modis_100_1000": {
+              "n": 7,
+              "mae": 213.4999472466874,
+              "signed_bias": 127.9182347100385,
+              "wape": 0.44479155676393206,
+              "total_ratio_pred_over_obs": 1.2664963223125802,
+              "median_log_ratio": 0.2802233848256102
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 0.7708333333333334
+          },
+          "band_median_width": {
+            "absolute": 4982.2044926259905,
+            "multiplicative": 328.469527709844
+          }
+        },
+        "seasonal_ratio_B1": {
+          "n": 48,
+          "mae": 91.13382122698539,
+          "signed_bias": -36.05201533406915,
+          "wape": 0.43076547699609047,
+          "total_ratio_pred_over_obs": 0.8295916557326126,
+          "median_log_ratio": -0.5337509547569042,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 12,
+              "mae": 76.53996937767894,
+              "signed_bias": -76.53996937767894,
+              "wape": 0.8312032873594093,
+              "total_ratio_pred_over_obs": 0.16879671264059065,
+              "median_log_ratio": -1.755111029718259
+            },
+            "modis_10_100": {
+              "n": 29,
+              "mae": 67.63600536677032,
+              "signed_bias": -58.8774050508083,
+              "wape": 0.3447177777919753,
+              "total_ratio_pred_over_obs": 0.6999218371751421,
+              "median_log_ratio": -0.386215028524779
+            },
+            "modis_100_1000": {
+              "n": 7,
+              "mae": 213.4999472466874,
+              "signed_bias": 127.9182347100385,
+              "wape": 0.44479155676393206,
+              "total_ratio_pred_over_obs": 1.2664963223125802,
+              "median_log_ratio": 0.2802233848256102
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 0.7708333333333334
+          },
+          "band_median_width": {
+            "absolute": 4982.2044926259905,
+            "multiplicative": 328.469527709844
+          }
+        },
+        "linear": {
+          "n": 48,
+          "mae": 632.3153865902294,
+          "signed_bias": 632.3153865902294,
+          "wape": 2.9887876471030044,
+          "total_ratio_pred_over_obs": 3.988787647103004,
+          "median_log_ratio": 1.4959472834995255,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 12,
+              "mae": 604.2688648997681,
+              "signed_bias": 604.2688648997681,
+              "wape": 6.562195817916034,
+              "total_ratio_pred_over_obs": 7.562195817916034,
+              "median_log_ratio": 2.0786374201942595
+            },
+            "modis_10_100": {
+              "n": 29,
+              "mae": 612.4595211202816,
+              "signed_bias": 612.4595211202816,
+              "wape": 3.121498438047129,
+              "total_ratio_pred_over_obs": 4.121498438047128,
+              "median_log_ratio": 1.4706042562835715
+            },
+            "modis_100_1000": {
+              "n": 7,
+              "mae": 762.6551521493755,
+              "signed_bias": 762.6551521493755,
+              "wape": 1.5888649003111988,
+              "total_ratio_pred_over_obs": 2.588864900311199,
+              "median_log_ratio": 0.9456582682507233
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 1.0
+          },
+          "band_median_width": {
+            "absolute": 11556.02026811983,
+            "multiplicative": 15944.419341742032
+          }
+        },
+        "loglinear": {
+          "n": 48,
+          "mae": 99.98973724360614,
+          "signed_bias": 45.11993031708992,
+          "wape": 0.4726250504867646,
+          "total_ratio_pred_over_obs": 1.2132699808193321,
+          "median_log_ratio": -0.035920760972519936,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 12,
+              "mae": 57.92518540742287,
+              "signed_bias": -57.92518540742287,
+              "wape": 0.6290517872299316,
+              "total_ratio_pred_over_obs": 0.37094821277006823,
+              "median_log_ratio": -0.8907335703913433
+            },
+            "modis_10_100": {
+              "n": 29,
+              "mae": 60.82433216120732,
+              "signed_bias": 17.943425861392534,
+              "wape": 0.3100009899253097,
+              "total_ratio_pred_over_obs": 1.0914515553568336,
+              "median_log_ratio": 0.03337277881751582
+            },
+            "modis_100_1000": {
+              "n": 7,
+              "mae": 334.3570757327153,
+              "signed_bias": 334.3570757327153,
+              "wape": 0.6965772411098237,
+              "total_ratio_pred_over_obs": 1.6965772411098237,
+              "median_log_ratio": 0.6156938802782568
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 0.9583333333333334
+          },
+          "band_median_width": {
+            "absolute": 22265.74964190327,
+            "multiplicative": 540.4815324227673
+          }
+        }
+      },
+      "portugal_mainland": {
+        "months": 48,
+        "train_regions": [
+          "chile",
+          "greece",
+          "uruguay",
+          "zambia"
+        ],
+        "domain": {
+          "train_modis_range": [
+            0.0,
+            49171.0
+          ],
+          "test_modis_range": [
+            0.0,
+            790.0
+          ],
+          "fraction_test_months_outside_train_range": 0.0,
+          "pooled_ratio_train": 3.464730085886899,
+          "pooled_ratio_test_observed": 2.332792207792208
+        },
+        "raw": {
+          "n": 48,
+          "mae": 85.52083333333333,
+          "signed_bias": -85.52083333333333,
+          "wape": 0.5713291579679889,
+          "total_ratio_pred_over_obs": 0.4286708420320111,
+          "median_log_ratio": -1.5286631378375972,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 15,
+              "mae": 47.2,
+              "signed_bias": -47.2,
+              "wape": 0.9254901960784314,
+              "total_ratio_pred_over_obs": 0.07450980392156863,
+              "median_log_ratio": -2.3978952727983707
+            },
+            "modis_10_100": {
+              "n": 25,
+              "mae": 63.28,
+              "signed_bias": -63.28,
+              "wape": 0.730041532071989,
+              "total_ratio_pred_over_obs": 0.2699584679280111,
+              "median_log_ratio": -1.3437347467010947
+            },
+            "modis_100_1000": {
+              "n": 8,
+              "mae": 226.875,
+              "signed_bias": -226.875,
+              "wape": 0.42675758288267107,
+              "total_ratio_pred_over_obs": 0.5732424171173289,
+              "median_log_ratio": -0.5527139576015849
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 0.8541666666666666
+          },
+          "band_median_width": {
+            "absolute": 23499.5,
+            "multiplicative": 174.8458490935542
+          }
+        },
+        "global_ratio": {
+          "n": 48,
+          "mae": 113.14167353974126,
+          "signed_bias": 72.63268051107599,
+          "wape": 0.7558525163406514,
+          "total_ratio_pred_over_obs": 1.4852287633307792,
+          "median_log_ratio": -0.31779748780535366,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 15,
+              "mae": 37.83402567362979,
+              "signed_bias": -37.83402567362979,
+              "wape": 0.7418436406594077,
+              "total_ratio_pred_over_obs": 0.2581563593405925,
+              "median_log_ratio": -1.4170440027343327
+            },
+            "modis_10_100": {
+              "n": 25,
+              "mae": 26.771119816434986,
+              "signed_bias": -5.6053159902465675,
+              "wape": 0.30885002095564124,
+              "total_ratio_pred_over_obs": 0.9353332257701135,
+              "median_log_ratio": -0.14142313038296586
+            },
+            "modis_100_1000": {
+              "n": 8,
+              "mae": 524.2514936740324,
+              "signed_bias": 524.2514936740324,
+              "wape": 0.9861302490929366,
+              "total_ratio_pred_over_obs": 1.9861302490929367,
+              "median_log_ratio": 0.6875618830036458
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 0.8333333333333334
+          },
+          "band_median_width": {
+            "absolute": 5451.684595635032,
+            "multiplicative": 170.91466612333875
+          }
+        },
+        "seasonal_ratio_B1": {
+          "n": 48,
+          "mae": 113.14167353974126,
+          "signed_bias": 72.63268051107599,
+          "wape": 0.7558525163406514,
+          "total_ratio_pred_over_obs": 1.4852287633307792,
+          "median_log_ratio": -0.31779748780535366,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 15,
+              "mae": 37.83402567362979,
+              "signed_bias": -37.83402567362979,
+              "wape": 0.7418436406594077,
+              "total_ratio_pred_over_obs": 0.2581563593405925,
+              "median_log_ratio": -1.4170440027343327
+            },
+            "modis_10_100": {
+              "n": 25,
+              "mae": 26.771119816434986,
+              "signed_bias": -5.6053159902465675,
+              "wape": 0.30885002095564124,
+              "total_ratio_pred_over_obs": 0.9353332257701135,
+              "median_log_ratio": -0.14142313038296586
+            },
+            "modis_100_1000": {
+              "n": 8,
+              "mae": 524.2514936740324,
+              "signed_bias": 524.2514936740324,
+              "wape": 0.9861302490929366,
+              "total_ratio_pred_over_obs": 1.9861302490929367,
+              "median_log_ratio": 0.6875618830036458
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 0.8333333333333334
+          },
+          "band_median_width": {
+            "absolute": 5451.684595635032,
+            "multiplicative": 170.91466612333875
+          }
+        },
+        "linear": {
+          "n": 48,
+          "mae": 765.0806991642663,
+          "signed_bias": 765.0806991642663,
+          "wape": 5.111186299218481,
+          "total_ratio_pred_over_obs": 6.11118629921848,
+          "median_log_ratio": 2.272781044536729,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 15,
+              "mae": 671.5287180917306,
+              "signed_bias": 671.5287180917306,
+              "wape": 13.167229766504521,
+              "total_ratio_pred_over_obs": 14.167229766504521,
+              "median_log_ratio": 2.730465313075359
+            },
+            "modis_10_100": {
+              "n": 25,
+              "mae": 698.2655126089317,
+              "signed_bias": 698.2655126089317,
+              "wape": 8.055670426960448,
+              "total_ratio_pred_over_obs": 9.055670426960448,
+              "median_log_ratio": 2.2416152933040956
+            },
+            "modis_100_1000": {
+              "n": 8,
+              "mae": 1149.2881216606906,
+              "signed_bias": 1149.2881216606906,
+              "wape": 2.16183987145204,
+              "total_ratio_pred_over_obs": 3.16183987145204,
+              "median_log_ratio": 1.2510162599655168
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 0.7916666666666666
+          },
+          "band_median_width": {
+            "absolute": 11423.189215461616,
+            "multiplicative": 11682.72735863135
+          }
+        },
+        "loglinear": {
+          "n": 48,
+          "mae": 195.59389685497683,
+          "signed_bias": 185.16583633930804,
+          "wape": 1.3066815656282378,
+          "total_ratio_pred_over_obs": 2.2370160256488223,
+          "median_log_ratio": 0.4241287150433398,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 15,
+              "mae": 19.5048602069253,
+              "signed_bias": -13.86493344321487,
+              "wape": 0.3824482393514765,
+              "total_ratio_pred_over_obs": 0.7281385599369633,
+              "median_log_ratio": -0.26335441146571925
+            },
+            "modis_10_100": {
+              "n": 25,
+              "mae": 71.04114568390344,
+              "signed_bias": 71.04114568390344,
+              "wape": 0.8195794379776584,
+              "total_ratio_pred_over_obs": 1.8195794379776584,
+              "median_log_ratio": 0.5845957944985801
+            },
+            "modis_100_1000": {
+              "n": 8,
+              "mae": 914.988187979678,
+              "signed_bias": 914.988187979678,
+              "wape": 1.7211158015136194,
+              "total_ratio_pred_over_obs": 2.7211158015136196,
+              "median_log_ratio": 1.0359391622036398
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 1.0
+          },
+          "band_median_width": {
+            "absolute": 25985.550858239738,
+            "multiplicative": 470.897838558967
+          }
+        }
+      },
+      "uruguay": {
+        "months": 48,
+        "train_regions": [
+          "chile",
+          "greece",
+          "portugal_mainland",
+          "zambia"
+        ],
+        "domain": {
+          "train_modis_range": [
+            0.0,
+            49171.0
+          ],
+          "test_modis_range": [
+            2.0,
+            175.0
+          ],
+          "fraction_test_months_outside_train_range": 0.0,
+          "pooled_ratio_train": 3.4591202834250474,
+          "pooled_ratio_test_observed": 3.1133489461358312
+        },
+        "raw": {
+          "n": 48,
+          "mae": 94.0,
+          "signed_bias": -94.0,
+          "wape": 0.6788024672784715,
+          "total_ratio_pred_over_obs": 0.3211975327215285,
+          "median_log_ratio": -1.1185352429417095,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 3,
+              "mae": 33.666666666666664,
+              "signed_bias": -33.666666666666664,
+              "wape": 0.9017857142857143,
+              "total_ratio_pred_over_obs": 0.09821428571428571,
+              "median_log_ratio": -2.120263536200091
+            },
+            "modis_10_100": {
+              "n": 41,
+              "mae": 84.58536585365853,
+              "signed_bias": -84.58536585365853,
+              "wape": 0.6861891571032845,
+              "total_ratio_pred_over_obs": 0.31381084289671546,
+              "median_log_ratio": -1.114360645636249
+            },
+            "modis_100_1000": {
+              "n": 4,
+              "mae": 235.75,
+              "signed_bias": -235.75,
+              "wape": 0.636731937879811,
+              "total_ratio_pred_over_obs": 0.3632680621201891,
+              "median_log_ratio": -0.9911214669773241
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 1.0
+          },
+          "band_median_width": {
+            "absolute": 23517.5,
+            "multiplicative": 437.736801242236
+          }
+        },
+        "global_ratio": {
+          "n": 48,
+          "mae": 35.73835904162259,
+          "signed_bias": 15.379620939843255,
+          "wape": 0.25807751376529026,
+          "total_ratio_pred_over_obs": 1.1110609004231196,
+          "median_log_ratio": 0.11154074615967426,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 3,
+              "mae": 24.64989229410816,
+              "signed_bias": -24.64989229410816,
+              "wape": 0.6602649721636115,
+              "total_ratio_pred_over_obs": 0.33973502783638854,
+              "median_log_ratio": -1.1497067943712176
+            },
+            "modis_10_100": {
+              "n": 41,
+              "mae": 30.76792303982644,
+              "signed_bias": 10.540604134442077,
+              "wape": 0.24960127515490385,
+              "total_ratio_pred_over_obs": 1.0855094518227395,
+              "median_log_ratio": 0.11057354580052597
+            },
+            "modis_100_1000": {
+              "n": 4,
+              "mae": 95.00167812066887,
+              "signed_bias": 95.00167812066887,
+              "wape": 0.2565879220004561,
+              "total_ratio_pred_over_obs": 1.256587922000456,
+              "median_log_ratio": 0.2439136273808971
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 1.0
+          },
+          "band_median_width": {
+            "absolute": 5589.408755764666,
+            "multiplicative": 452.9033308961026
+          }
+        },
+        "seasonal_ratio_B1": {
+          "n": 48,
+          "mae": 35.73835904162259,
+          "signed_bias": 15.379620939843255,
+          "wape": 0.25807751376529026,
+          "total_ratio_pred_over_obs": 1.1110609004231196,
+          "median_log_ratio": 0.11154074615967426,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 3,
+              "mae": 24.64989229410816,
+              "signed_bias": -24.64989229410816,
+              "wape": 0.6602649721636115,
+              "total_ratio_pred_over_obs": 0.33973502783638854,
+              "median_log_ratio": -1.1497067943712176
+            },
+            "modis_10_100": {
+              "n": 41,
+              "mae": 30.76792303982644,
+              "signed_bias": 10.540604134442077,
+              "wape": 0.24960127515490385,
+              "total_ratio_pred_over_obs": 1.0855094518227395,
+              "median_log_ratio": 0.11057354580052597
+            },
+            "modis_100_1000": {
+              "n": 4,
+              "mae": 95.00167812066887,
+              "signed_bias": 95.00167812066887,
+              "wape": 0.2565879220004561,
+              "total_ratio_pred_over_obs": 1.256587922000456,
+              "median_log_ratio": 0.2439136273808971
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 1.0
+          },
+          "band_median_width": {
+            "absolute": 5589.408755764666,
+            "multiplicative": 452.9033308961026
+          }
+        },
+        "linear": {
+          "n": 48,
+          "mae": 699.9107300121154,
+          "signed_bias": 699.9107300121154,
+          "wape": 5.0542673447542565,
+          "total_ratio_pred_over_obs": 6.0542673447542565,
+          "median_log_ratio": 2.017029222013975,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 3,
+              "mae": 671.0746563089948,
+              "signed_bias": 671.0746563089948,
+              "wape": 17.975214008276648,
+              "total_ratio_pred_over_obs": 18.975214008276648,
+              "median_log_ratio": 2.777243712947943
+            },
+            "modis_10_100": {
+              "n": 41,
+              "mae": 696.6614188147047,
+              "signed_bias": 696.6614188147047,
+              "wape": 5.651586500079718,
+              "total_ratio_pred_over_obs": 6.651586500079718,
+              "median_log_ratio": 2.0390806336990117
+            },
+            "modis_100_1000": {
+              "n": 4,
+              "mae": 754.8432250629156,
+              "signed_bias": 754.8432250629156,
+              "wape": 2.0387392979417034,
+              "total_ratio_pred_over_obs": 3.0387392979417034,
+              "median_log_ratio": 1.0784662739874213
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 0.9583333333333334
+          },
+          "band_median_width": {
+            "absolute": 11132.61587794037,
+            "multiplicative": 15021.98271441325
+          }
+        },
+        "loglinear": {
+          "n": 48,
+          "mae": 154.48486421996878,
+          "signed_bias": 154.27702696973267,
+          "wape": 1.1155819892520689,
+          "total_ratio_pred_over_obs": 2.114081133525977,
+          "median_log_ratio": 0.7306620649810892,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 3,
+              "mae": 9.062903204087567,
+              "signed_bias": 5.737507200309927,
+              "wape": 0.24275633582377412,
+              "total_ratio_pred_over_obs": 1.1536832285797303,
+              "median_log_ratio": 0.20180180935547745
+            },
+            "modis_10_100": {
+              "n": 41,
+              "mae": 141.8217502119905,
+              "signed_bias": 141.8217502119905,
+              "wape": 1.1505128133540976,
+              "total_ratio_pred_over_obs": 2.150512813354098,
+              "median_log_ratio": 0.7368397496896282
+            },
+            "modis_100_1000": {
+              "n": 4,
+              "mae": 393.3482535636572,
+              "signed_bias": 393.3482535636572,
+              "wape": 1.0623855599288512,
+              "total_ratio_pred_over_obs": 2.062385559928851,
+              "median_log_ratio": 0.7381323986907247
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 0.9583333333333334
+          },
+          "band_median_width": {
+            "absolute": 27233.478244094204,
+            "multiplicative": 934.3370345043743
+          }
+        }
+      },
+      "zambia": {
+        "months": 48,
+        "train_regions": [
+          "chile",
+          "greece",
+          "portugal_mainland",
+          "uruguay"
+        ],
+        "domain": {
+          "train_modis_range": [
+            0.0,
+            2870.0
+          ],
+          "test_modis_range": [
+            9.0,
+            49171.0
+          ],
+          "fraction_test_months_outside_train_range": 0.4583333333333333,
+          "pooled_ratio_train": 3.042247480162985,
+          "pooled_ratio_test_observed": 3.4783697124534902
+        },
+        "raw": {
+          "n": 48,
+          "mae": 24090.166666666668,
+          "signed_bias": -24090.166666666668,
+          "wape": 0.7125089962634698,
+          "total_ratio_pred_over_obs": 0.28749100373653025,
+          "median_log_ratio": -1.7390026707333706,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 1,
+              "mae": 78.0,
+              "signed_bias": -78.0,
+              "wape": 0.896551724137931,
+              "total_ratio_pred_over_obs": 0.10344827586206896,
+              "median_log_ratio": -2.174751721484161
+            },
+            "modis_10_100": {
+              "n": 13,
+              "mae": 253.84615384615384,
+              "signed_bias": -253.84615384615384,
+              "wape": 0.9073412152873247,
+              "total_ratio_pred_over_obs": 0.09265878471267529,
+              "median_log_ratio": -2.1972245773362196
+            },
+            "modis_100_1000": {
+              "n": 9,
+              "mae": 3142.4444444444443,
+              "signed_bias": -3142.4444444444443,
+              "wape": 0.8619407533829087,
+              "total_ratio_pred_over_obs": 0.13805924661709132,
+              "median_log_ratio": -1.9441059086019554
+            },
+            "modis_1000_inf": {
+              "n": 25,
+              "mae": 44986.72,
+              "signed_bias": -44986.72,
+              "wape": 0.7089613959000479,
+              "total_ratio_pred_over_obs": 0.2910386040999521,
+              "median_log_ratio": -1.2595708616576449
+            }
+          },
+          "band_coverage": {
+            "absolute": 0.2708333333333333,
+            "multiplicative": 0.9375
+          },
+          "band_median_width": {
+            "absolute": 1470.0,
+            "multiplicative": 12727.0
+          }
+        },
+        "global_ratio": {
+          "n": 48,
+          "mae": 8565.713247909072,
+          "signed_bias": -4239.180784902425,
+          "wape": 0.2533460159490414,
+          "total_ratio_pred_over_obs": 0.8746187816869865,
+          "median_log_ratio": -0.6264658695616774,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 1,
+              "mae": 59.61977267853314,
+              "signed_bias": -59.61977267853314,
+              "wape": 0.6852847434314154,
+              "total_ratio_pred_over_obs": 0.3147152565685847,
+              "median_log_ratio": -1.1316441328605995
+            },
+            "modis_10_100": {
+              "n": 13,
+              "mae": 200.90481532192882,
+              "signed_bias": -200.90481532192882,
+              "wape": 0.7181090456928992,
+              "total_ratio_pred_over_obs": 0.2818909543071009,
+              "median_log_ratio": -1.1475964552392957
+            },
+            "modis_100_1000": {
+              "n": 9,
+              "mae": 2114.5132127624083,
+              "signed_bias": -2114.5132127624083,
+              "wape": 0.5799896048659537,
+              "total_ratio_pred_over_obs": 0.4200103951340462,
+              "median_log_ratio": -0.8336292609160387
+            },
+            "modis_1000_inf": {
+              "n": 25,
+              "mae": 15578.089384516405,
+              "signed_bias": -7271.1470555436445,
+              "wape": 0.24550053872570549,
+              "total_ratio_pred_over_obs": 0.8854114599532319,
+              "median_log_ratio": -0.14699554702555073
+            }
+          },
+          "band_coverage": {
+            "absolute": 0.2708333333333333,
+            "multiplicative": 0.9583333333333334
+          },
+          "band_median_width": {
+            "absolute": 530.591549295772,
+            "multiplicative": 13881.093673485995
+          }
+        },
+        "seasonal_ratio_B1": {
+          "n": 48,
+          "mae": 8565.713247909072,
+          "signed_bias": -4239.180784902425,
+          "wape": 0.2533460159490414,
+          "total_ratio_pred_over_obs": 0.8746187816869865,
+          "median_log_ratio": -0.6264658695616774,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 1,
+              "mae": 59.61977267853314,
+              "signed_bias": -59.61977267853314,
+              "wape": 0.6852847434314154,
+              "total_ratio_pred_over_obs": 0.3147152565685847,
+              "median_log_ratio": -1.1316441328605995
+            },
+            "modis_10_100": {
+              "n": 13,
+              "mae": 200.90481532192882,
+              "signed_bias": -200.90481532192882,
+              "wape": 0.7181090456928992,
+              "total_ratio_pred_over_obs": 0.2818909543071009,
+              "median_log_ratio": -1.1475964552392957
+            },
+            "modis_100_1000": {
+              "n": 9,
+              "mae": 2114.5132127624083,
+              "signed_bias": -2114.5132127624083,
+              "wape": 0.5799896048659537,
+              "total_ratio_pred_over_obs": 0.4200103951340462,
+              "median_log_ratio": -0.8336292609160387
+            },
+            "modis_1000_inf": {
+              "n": 25,
+              "mae": 15578.089384516405,
+              "signed_bias": -7271.1470555436445,
+              "wape": 0.24550053872570549,
+              "total_ratio_pred_over_obs": 0.8854114599532319,
+              "median_log_ratio": -0.14699554702555073
+            }
+          },
+          "band_coverage": {
+            "absolute": 0.2708333333333333,
+            "multiplicative": 0.9583333333333334
+          },
+          "band_median_width": {
+            "absolute": 530.591549295772,
+            "multiplicative": 13881.093673485995
+          }
+        },
+        "linear": {
+          "n": 48,
+          "mae": 15130.066055536396,
+          "signed_bias": -14623.734118023733,
+          "wape": 0.44749828126124347,
+          "total_ratio_pred_over_obs": 0.5674773752198915,
+          "median_log_ratio": -0.5427371080719863,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 1,
+              "mae": 62.0170060428853,
+              "signed_bias": 62.0170060428853,
+              "wape": 0.7128391499182218,
+              "total_ratio_pred_over_obs": 1.7128391499182218,
+              "median_log_ratio": 0.5334118468109816
+            },
+            "modis_10_100": {
+              "n": 13,
+              "mae": 147.24335606383025,
+              "signed_bias": -97.57655395316463,
+              "wape": 0.5263028949215819,
+              "total_ratio_pred_over_obs": 0.6512248552677644,
+              "median_log_ratio": -0.10774219622963968
+            },
+            "modis_100_1000": {
+              "n": 9,
+              "mae": 2527.6793219831443,
+              "signed_bias": -2527.6793219831443,
+              "wape": 0.6933168931442246,
+              "total_ratio_pred_over_obs": 0.3066831068557752,
+              "median_log_ratio": -1.1278355295060667
+            },
+            "modis_1000_inf": {
+              "n": 25,
+              "mae": 28060.715045321038,
+              "signed_bias": -27119.345822877698,
+              "wape": 0.4422185860290388,
+              "total_ratio_pred_over_obs": 0.5726167795633132,
+              "median_log_ratio": -0.5843305893851662
+            }
+          },
+          "band_coverage": {
+            "absolute": 0.2708333333333333,
+            "multiplicative": 0.9583333333333334
+          },
+          "band_median_width": {
+            "absolute": 879.3120320618909,
+            "multiplicative": 8424.291483048684
+          }
+        },
+        "loglinear": {
+          "n": 48,
+          "mae": 26903.541959339767,
+          "signed_bias": -26901.78654895529,
+          "wape": 0.7957195125555235,
+          "total_ratio_pred_over_obs": 0.20433240679017395,
+          "median_log_ratio": -1.1577897589891157,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 1,
+              "mae": 9.478874310551603,
+              "signed_bias": -9.478874310551603,
+              "wape": 0.10895257828220234,
+              "total_ratio_pred_over_obs": 0.8910474217177977,
+              "median_log_ratio": -0.11396910883230808
+            },
+            "modis_10_100": {
+              "n": 13,
+              "mae": 138.76778493983895,
+              "signed_bias": -132.2862696740766,
+              "wape": 0.4960080297547172,
+              "total_ratio_pred_over_obs": 0.5271593330318955,
+              "median_log_ratio": -0.3399338034278629
+            },
+            "modis_100_1000": {
+              "n": 9,
+              "mae": 2531.588562702238,
+              "signed_bias": -2531.588562702238,
+              "wape": 0.6943891583664555,
+              "total_ratio_pred_over_obs": 0.30561084163354435,
+              "median_log_ratio": -1.0331069043157257
+            },
+            "modis_1000_inf": {
+              "n": 25,
+              "mae": 50670.8902762184,
+              "signed_bias": -50670.8902762184,
+              "wape": 0.7985402159065156,
+              "total_ratio_pred_over_obs": 0.20145978409348436,
+              "median_log_ratio": -1.4465535975221615
+            }
+          },
+          "band_coverage": {
+            "absolute": 0.2708333333333333,
+            "multiplicative": 0.3541666666666667
+          },
+          "band_median_width": {
+            "absolute": 1094.3026755831952,
+            "multiplicative": 4170.695892557649
+          }
+        }
+      }
+    },
+    "status": "exploratory_reanalysis_of_previously_inspected_data",
+    "caveat": "Train and test share calendar years, so this isolates geographic transfer, not temporal transfer."
+  },
+  "loro_terra": {
+    "satellite": "T",
+    "years": [
+      2022,
+      2025
+    ],
+    "protocol": "leave one region out, same calendar period; nested inner LORO for band calibration",
+    "regions": {
+      "chile": {
+        "months": 48,
+        "train_regions": [
+          "greece",
+          "portugal_mainland",
+          "uruguay",
+          "zambia"
+        ],
+        "domain": {
+          "train_modis_range": [
+            0.0,
+            12383.0
+          ],
+          "test_modis_range": [
+            24.0,
+            2265.0
+          ],
+          "fraction_test_months_outside_train_range": 0.0,
+          "pooled_ratio_train": 11.456816490083272,
+          "pooled_ratio_test_observed": 4.139229344854951
+        },
+        "raw": {
+          "n": 48,
+          "mae": 741.7083333333334,
+          "signed_bias": -741.7083333333334,
+          "wape": 0.7584091344822445,
+          "total_ratio_pred_over_obs": 0.24159086551775558,
+          "median_log_ratio": -1.677028509306414,
+          "by_activity": {
+            "modis_10_100": {
+              "n": 17,
+              "mae": 512.3529411764706,
+              "signed_bias": -512.3529411764706,
+              "wape": 0.9042774086378738,
+              "total_ratio_pred_over_obs": 0.09572259136212624,
+              "median_log_ratio": -2.1177604059819726
+            },
+            "modis_100_1000": {
+              "n": 30,
+              "mae": 805.0,
+              "signed_bias": -805.0,
+              "wape": 0.7475854383358098,
+              "total_ratio_pred_over_obs": 0.2524145616641902,
+              "median_log_ratio": -1.2904010395169085
+            },
+            "modis_1000_inf": {
+              "n": 1,
+              "mae": 2742.0,
+              "signed_bias": -2742.0,
+              "wape": 0.5476333133612942,
+              "total_ratio_pred_over_obs": 0.45236668663870583,
+              "median_log_ratio": -0.7930204711919828
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 1.0
+          },
+          "band_median_width": {
+            "absolute": 27703.5,
+            "multiplicative": 3753.707274320771
+          }
+        },
+        "global_ratio": {
+          "n": 48,
+          "mae": 1795.890688153492,
+          "signed_bias": 1728.9324127923828,
+          "wape": 1.8363281646117122,
+          "total_ratio_pred_over_obs": 2.767862211917312,
+          "median_log_ratio": 0.7478544898321267,
+          "by_activity": {
+            "modis_10_100": {
+              "n": 17,
+              "mae": 215.43662046757805,
+              "signed_bias": 54.77557669745745,
+              "wape": 0.3802348990810659,
+              "total_ratio_pred_over_obs": 1.0966761631911106,
+              "median_log_ratio": 0.2918874407693396
+            },
+            "modis_100_1000": {
+              "n": 30,
+              "mae": 2053.2547044460057,
+              "signed_bias": 2037.162722004633,
+              "wape": 1.9068115754513426,
+              "total_ratio_pred_over_obs": 2.8918673124114354,
+              "median_log_ratio": 1.145724723441326
+            },
+            "modis_1000_inf": {
+              "n": 1,
+              "mae": 20942.68935003861,
+              "signed_bias": 20942.68935003861,
+              "wape": 4.182682115046656,
+              "total_ratio_pred_over_obs": 5.182682115046656,
+              "median_log_ratio": 1.6451615400099628
+            }
+          },
+          "band_coverage": {
+            "absolute": 0.9791666666666666,
+            "multiplicative": 1.0
+          },
+          "band_median_width": {
+            "absolute": 22311.48431158688,
+            "multiplicative": 11458.49924172436
+          }
+        },
+        "seasonal_ratio_B1": {
+          "n": 48,
+          "mae": 1795.890688153492,
+          "signed_bias": 1728.9324127923828,
+          "wape": 1.8363281646117122,
+          "total_ratio_pred_over_obs": 2.767862211917312,
+          "median_log_ratio": 0.7478544898321267,
+          "by_activity": {
+            "modis_10_100": {
+              "n": 17,
+              "mae": 215.43662046757805,
+              "signed_bias": 54.77557669745745,
+              "wape": 0.3802348990810659,
+              "total_ratio_pred_over_obs": 1.0966761631911106,
+              "median_log_ratio": 0.2918874407693396
+            },
+            "modis_100_1000": {
+              "n": 30,
+              "mae": 2053.2547044460057,
+              "signed_bias": 2037.162722004633,
+              "wape": 1.9068115754513426,
+              "total_ratio_pred_over_obs": 2.8918673124114354,
+              "median_log_ratio": 1.145724723441326
+            },
+            "modis_1000_inf": {
+              "n": 1,
+              "mae": 20942.68935003861,
+              "signed_bias": 20942.68935003861,
+              "wape": 4.182682115046656,
+              "total_ratio_pred_over_obs": 5.182682115046656,
+              "median_log_ratio": 1.6451615400099628
+            }
+          },
+          "band_coverage": {
+            "absolute": 0.9791666666666666,
+            "multiplicative": 1.0
+          },
+          "band_median_width": {
+            "absolute": 22311.48431158688,
+            "multiplicative": 11458.49924172436
+          }
+        },
+        "linear": {
+          "n": 48,
+          "mae": 1922.2964752020425,
+          "signed_bias": 1888.183575420615,
+          "wape": 1.965580188946127,
+          "total_ratio_pred_over_obs": 2.930699180286507,
+          "median_log_ratio": 0.9704792013322788,
+          "by_activity": {
+            "modis_10_100": {
+              "n": 17,
+              "mae": 361.7649138173639,
+              "signed_bias": 270.60114020666316,
+              "wape": 0.6384970447357959,
+              "total_ratio_pred_over_obs": 1.4775975273581057,
+              "median_log_ratio": 0.778165547377525
+            },
+            "modis_100_1000": {
+              "n": 30,
+              "mae": 2188.293025685848,
+              "signed_bias": 2185.3718577482946,
+              "wape": 2.0322186345522364,
+              "total_ratio_pred_over_obs": 3.029505811430437,
+              "median_log_ratio": 1.1729169653794602
+            },
+            "modis_1000_inf": {
+              "n": 1,
+              "mae": 20471.436504227408,
+              "signed_bias": 20471.436504227408,
+              "wape": 4.0885633122083895,
+              "total_ratio_pred_over_obs": 5.0885633122083895,
+              "median_log_ratio": 1.6268350814429156
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 1.0
+          },
+          "band_median_width": {
+            "absolute": 27683.224580574053,
+            "multiplicative": 26573.23023085161
+          }
+        },
+        "loglinear": {
+          "n": 48,
+          "mae": 1385.9894546986864,
+          "signed_bias": 1306.718301124865,
+          "wape": 1.4171973206982287,
+          "total_ratio_pred_over_obs": 2.3361412447860923,
+          "median_log_ratio": 0.7278262514649257,
+          "by_activity": {
+            "modis_10_100": {
+              "n": 17,
+              "mae": 227.55766761477867,
+              "signed_bias": 50.907057152550436,
+              "wape": 0.4016279432569806,
+              "total_ratio_pred_over_obs": 1.0898484189777156,
+              "median_log_ratio": 0.3500570129112013
+            },
+            "modis_100_1000": {
+              "n": 30,
+              "mae": 1628.0187271205307,
+              "signed_bias": 1601.2868939976793,
+              "wape": 1.5119044642649802,
+              "total_ratio_pred_over_obs": 2.4870792106219155,
+              "median_log_ratio": 0.9725406949444401
+            },
+            "modis_1000_inf": {
+              "n": 1,
+              "mae": 13818.451662469797,
+              "signed_bias": 13818.451662469797,
+              "wape": 2.7598265752885554,
+              "total_ratio_pred_over_obs": 3.7598265752885554,
+              "median_log_ratio": 1.3242262504592757
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 1.0
+          },
+          "band_median_width": {
+            "absolute": 32427.849261990697,
+            "multiplicative": 44926.583861931955
+          }
+        }
+      },
+      "greece": {
+        "months": 48,
+        "train_regions": [
+          "chile",
+          "portugal_mainland",
+          "uruguay",
+          "zambia"
+        ],
+        "domain": {
+          "train_modis_range": [
+            0.0,
+            12383.0
+          ],
+          "test_modis_range": [
+            0.0,
+            411.0
+          ],
+          "fraction_test_months_outside_train_range": 0.0,
+          "pooled_ratio_train": 10.983208845689683,
+          "pooled_ratio_test_observed": 5.663692136084774
+        },
+        "raw": {
+          "n": 48,
+          "mae": 174.20833333333334,
+          "signed_bias": -174.20833333333334,
+          "wape": 0.8234367306745446,
+          "total_ratio_pred_over_obs": 0.17656326932545544,
+          "median_log_ratio": -2.3493871829736577,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 16,
+              "mae": 109.3125,
+              "signed_bias": -109.3125,
+              "wape": 0.9583561643835616,
+              "total_ratio_pred_over_obs": 0.041643835616438356,
+              "median_log_ratio": -2.889985806506874
+            },
+            "modis_10_100": {
+              "n": 27,
+              "mae": 190.37037037037038,
+              "signed_bias": -190.37037037037038,
+              "wape": 0.8673641579480257,
+              "total_ratio_pred_over_obs": 0.13263584205197435,
+              "median_log_ratio": -2.2553322081435
+            },
+            "modis_100_1000": {
+              "n": 5,
+              "mae": 294.6,
+              "signed_bias": -294.6,
+              "wape": 0.6127287853577371,
+              "total_ratio_pred_over_obs": 0.3872712146422629,
+              "median_log_ratio": -0.9852836033611064
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 0.8541666666666666
+          },
+          "band_median_width": {
+            "absolute": 27556.0,
+            "multiplicative": 300.90322580645164
+          }
+        },
+        "global_ratio": {
+          "n": 48,
+          "mae": 265.141204866434,
+          "signed_bias": 198.70611375670003,
+          "wape": 1.2532523715990973,
+          "total_ratio_pred_over_obs": 1.9392312614792322,
+          "median_log_ratio": -0.0588997040402699,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 16,
+              "mae": 61.89225798297401,
+              "signed_bias": -61.89225798297401,
+              "wape": 0.5426170562890872,
+              "total_ratio_pred_over_obs": 0.4573829437109128,
+              "median_log_ratio": -0.6790630175963226
+            },
+            "modis_10_100": {
+              "n": 27,
+              "mae": 145.00497298237605,
+              "signed_bias": 100.25193158192933,
+              "wape": 0.6606706497678287,
+              "total_ratio_pred_over_obs": 1.4567671536807443,
+              "median_log_ratio": 0.10404583279424985
+            },
+            "modis_100_1000": {
+              "n": 5,
+              "mae": 1564.273487067419,
+              "signed_bias": 1564.273487067419,
+              "wape": 3.2534806303398893,
+              "total_ratio_pred_over_obs": 4.253480630339889,
+              "median_log_ratio": 1.4029352813264329
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 0.9375
+          },
+          "band_median_width": {
+            "absolute": 21251.205866479657,
+            "multiplicative": 861.5341962197164
+          }
+        },
+        "seasonal_ratio_B1": {
+          "n": 48,
+          "mae": 265.141204866434,
+          "signed_bias": 198.70611375670003,
+          "wape": 1.2532523715990973,
+          "total_ratio_pred_over_obs": 1.9392312614792322,
+          "median_log_ratio": -0.0588997040402699,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 16,
+              "mae": 61.89225798297401,
+              "signed_bias": -61.89225798297401,
+              "wape": 0.5426170562890872,
+              "total_ratio_pred_over_obs": 0.4573829437109128,
+              "median_log_ratio": -0.6790630175963226
+            },
+            "modis_10_100": {
+              "n": 27,
+              "mae": 145.00497298237605,
+              "signed_bias": 100.25193158192933,
+              "wape": 0.6606706497678287,
+              "total_ratio_pred_over_obs": 1.4567671536807443,
+              "median_log_ratio": 0.10404583279424985
+            },
+            "modis_100_1000": {
+              "n": 5,
+              "mae": 1564.273487067419,
+              "signed_bias": 1564.273487067419,
+              "wape": 3.2534806303398893,
+              "total_ratio_pred_over_obs": 4.253480630339889,
+              "median_log_ratio": 1.4029352813264329
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 0.9375
+          },
+          "band_median_width": {
+            "absolute": 21251.205866479657,
+            "multiplicative": 861.5341962197164
+          }
+        },
+        "linear": {
+          "n": 48,
+          "mae": 279.48442632161294,
+          "signed_bias": 106.68036687392072,
+          "wape": 1.3210489870445514,
+          "total_ratio_pred_over_obs": 1.5042498877349282,
+          "median_log_ratio": -1.9425654845026918,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 16,
+              "mae": 114.0625,
+              "signed_bias": -114.0625,
+              "wape": 1.0,
+              "total_ratio_pred_over_obs": 0.0,
+              "median_log_ratio": -4.6288981565662395
+            },
+            "modis_10_100": {
+              "n": 27,
+              "mae": 156.76836241816076,
+              "signed_bias": -15.253669192551321,
+              "wape": 0.7142669229312084,
+              "total_ratio_pred_over_obs": 0.9305013384747072,
+              "median_log_ratio": -0.4840760568067757
+            },
+            "modis_100_1000": {
+              "n": 5,
+              "mae": 1471.501335629416,
+              "signed_bias": 1471.501335629416,
+              "wape": 3.0605269043873045,
+              "total_ratio_pred_over_obs": 4.060526904387305,
+              "median_log_ratio": 1.3136954545465245
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 0.5833333333333334
+          },
+          "band_median_width": {
+            "absolute": 24044.577620875556,
+            "multiplicative": 969.4946338877488
+          }
+        },
+        "loglinear": {
+          "n": 48,
+          "mae": 218.75463709585384,
+          "signed_bias": 163.42258432187808,
+          "wape": 1.0339953304383047,
+          "total_ratio_pred_over_obs": 1.7724553468685524,
+          "median_log_ratio": 0.044643440490777564,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 16,
+              "mae": 50.66276737546683,
+              "signed_bias": -48.57533234257511,
+              "wape": 0.4441667276753256,
+              "total_ratio_pred_over_obs": 0.5741340726130402,
+              "median_log_ratio": -0.4623415835562686
+            },
+            "modis_10_100": {
+              "n": 27,
+              "mae": 130.34262862306977,
+              "signed_bias": 90.78229759854513,
+              "wape": 0.5938661783366325,
+              "total_ratio_pred_over_obs": 1.4136216731624565,
+              "median_log_ratio": 0.1475530418258359
+            },
+            "modis_100_1000": {
+              "n": 5,
+              "mae": 1234.073465954126,
+              "signed_bias": 1234.073465954126,
+              "wape": 2.5667085398380323,
+              "total_ratio_pred_over_obs": 3.5667085398380323,
+              "median_log_ratio": 1.276621380864398
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 1.0
+          },
+          "band_median_width": {
+            "absolute": 25960.86292743112,
+            "multiplicative": 1274.4204703913358
+          }
+        }
+      },
+      "portugal_mainland": {
+        "months": 48,
+        "train_regions": [
+          "chile",
+          "greece",
+          "uruguay",
+          "zambia"
+        ],
+        "domain": {
+          "train_modis_range": [
+            0.0,
+            12383.0
+          ],
+          "test_modis_range": [
+            0.0,
+            869.0
+          ],
+          "fraction_test_months_outside_train_range": 0.0,
+          "pooled_ratio_train": 11.09537342200996,
+          "pooled_ratio_test_observed": 2.3365853658536584
+        },
+        "raw": {
+          "n": 48,
+          "mae": 85.625,
+          "signed_bias": -85.625,
+          "wape": 0.5720250521920668,
+          "total_ratio_pred_over_obs": 0.4279749478079332,
+          "median_log_ratio": -1.4426995486133931,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 14,
+              "mae": 43.857142857142854,
+              "signed_bias": -43.857142857142854,
+              "wape": 0.9260935143288085,
+              "total_ratio_pred_over_obs": 0.07390648567119155,
+              "median_log_ratio": -2.271647391135002
+            },
+            "modis_10_100": {
+              "n": 28,
+              "mae": 79.53571428571429,
+              "signed_bias": -79.53571428571429,
+              "wape": 0.7551712444896576,
+              "total_ratio_pred_over_obs": 0.2448287555103425,
+              "median_log_ratio": -1.4191419907525882
+            },
+            "modis_100_1000": {
+              "n": 6,
+              "mae": 211.5,
+              "signed_bias": -211.5,
+              "wape": 0.35516372795969775,
+              "total_ratio_pred_over_obs": 0.6448362720403022,
+              "median_log_ratio": -0.47361122189000593
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 0.9166666666666666
+          },
+          "band_median_width": {
+            "absolute": 27558.0,
+            "multiplicative": 357.4
+          }
+        },
+        "global_ratio": {
+          "n": 48,
+          "mae": 571.6078136957585,
+          "signed_bias": 561.109859847513,
+          "wape": 3.8186743294914973,
+          "total_ratio_pred_over_obs": 4.748541861194242,
+          "median_log_ratio": 0.9188540151702671,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 14,
+              "mae": 27.46964874244778,
+              "signed_bias": -8.523335880107998,
+              "wape": 0.5800529146218234,
+              "total_ratio_pred_over_obs": 0.8200200568302988,
+              "median_log_ratio": -0.07638843733850678
+            },
+            "modis_10_100": {
+              "n": 28,
+              "mae": 180.78070038182824,
+              "signed_bias": 180.78070038182824,
+              "wape": 1.7164664668332286,
+              "total_ratio_pred_over_obs": 2.7164664668332286,
+              "median_log_ratio": 0.9611388732592938
+            },
+            "modis_100_1000": {
+              "n": 6,
+              "mae": 3665.123394051825,
+              "signed_bias": 3665.123394051825,
+              "wape": 6.154699234343955,
+              "total_ratio_pred_over_obs": 7.154699234343955,
+              "median_log_ratio": 1.930168855495912
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 0.875
+          },
+          "band_median_width": {
+            "absolute": 18844.190927837783,
+            "multiplicative": 900.4074040124468
+          }
+        },
+        "seasonal_ratio_B1": {
+          "n": 48,
+          "mae": 571.6078136957585,
+          "signed_bias": 561.109859847513,
+          "wape": 3.8186743294914973,
+          "total_ratio_pred_over_obs": 4.748541861194242,
+          "median_log_ratio": 0.9188540151702671,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 14,
+              "mae": 27.46964874244778,
+              "signed_bias": -8.523335880107998,
+              "wape": 0.5800529146218234,
+              "total_ratio_pred_over_obs": 0.8200200568302988,
+              "median_log_ratio": -0.07638843733850678
+            },
+            "modis_10_100": {
+              "n": 28,
+              "mae": 180.78070038182824,
+              "signed_bias": 180.78070038182824,
+              "wape": 1.7164664668332286,
+              "total_ratio_pred_over_obs": 2.7164664668332286,
+              "median_log_ratio": 0.9611388732592938
+            },
+            "modis_100_1000": {
+              "n": 6,
+              "mae": 3665.123394051825,
+              "signed_bias": 3665.123394051825,
+              "wape": 6.154699234343955,
+              "total_ratio_pred_over_obs": 7.154699234343955,
+              "median_log_ratio": 1.930168855495912
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 0.875
+          },
+          "band_median_width": {
+            "absolute": 18844.190927837783,
+            "multiplicative": 900.4074040124468
+          }
+        },
+        "linear": {
+          "n": 48,
+          "mae": 554.5148521638478,
+          "signed_bias": 536.53992038209,
+          "wape": 3.7044833547480436,
+          "total_ratio_pred_over_obs": 4.5844003031788905,
+          "median_log_ratio": 0.737265961354787,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 14,
+              "mae": 31.154351362518334,
+              "signed_bias": -30.47398617493683,
+              "wape": 0.657859606448351,
+              "total_ratio_pred_over_obs": 0.3565070792622691,
+              "median_log_ratio": -2.4814357901044817
+            },
+            "modis_10_100": {
+              "n": 28,
+              "mae": 152.82502868732539,
+              "signed_bias": 152.82502868732539,
+              "wape": 1.4510345212767415,
+              "total_ratio_pred_over_obs": 2.4510345212767413,
+              "median_log_ratio": 0.8648884998035595
+            },
+            "modis_100_1000": {
+              "n": 6,
+              "mae": 3650.241863590721,
+              "signed_bias": 3650.241863590721,
+              "wape": 6.129709258758558,
+              "total_ratio_pred_over_obs": 7.129709258758558,
+              "median_log_ratio": 1.9255583391441933
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 0.75
+          },
+          "band_median_width": {
+            "absolute": 23927.394690680794,
+            "multiplicative": 882.4895168887336
+          }
+        },
+        "loglinear": {
+          "n": 48,
+          "mae": 500.09488899219133,
+          "signed_bias": 495.7350458306675,
+          "wape": 3.34092618950942,
+          "total_ratio_pred_over_obs": 4.311799888639115,
+          "median_log_ratio": 1.1033533961189315,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 14,
+              "mae": 34.72464324310993,
+              "signed_bias": 19.776609546456545,
+              "wape": 0.7332503852240407,
+              "total_ratio_pred_over_obs": 1.4176056314485543,
+              "median_log_ratio": 0.45048291433566723
+            },
+            "modis_10_100": {
+              "n": 28,
+              "mae": 223.21184547346738,
+              "signed_bias": 223.21184547346738,
+              "wape": 2.119339326299453,
+              "total_ratio_pred_over_obs": 3.119339326299453,
+              "median_log_ratio": 1.1532322353231876
+            },
+            "modis_100_1000": {
+              "n": 6,
+              "mae": 2878.079665494093,
+              "signed_bias": 2878.079665494093,
+              "wape": 4.8330472972193,
+              "total_ratio_pred_over_obs": 5.8330472972193,
+              "median_log_ratio": 1.7292399373423475
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 1.0
+          },
+          "band_median_width": {
+            "absolute": 27439.14591115988,
+            "multiplicative": 2296.9097882805195
+          }
+        }
+      },
+      "uruguay": {
+        "months": 48,
+        "train_regions": [
+          "chile",
+          "greece",
+          "portugal_mainland",
+          "zambia"
+        ],
+        "domain": {
+          "train_modis_range": [
+            0.0,
+            12383.0
+          ],
+          "test_modis_range": [
+            0.0,
+            82.0
+          ],
+          "fraction_test_months_outside_train_range": 0.0,
+          "pooled_ratio_train": 10.954925297543681,
+          "pooled_ratio_test_observed": 6.1717734447539465
+        },
+        "raw": {
+          "n": 48,
+          "mae": 116.04166666666667,
+          "signed_bias": -116.04166666666667,
+          "wape": 0.8379720174514819,
+          "total_ratio_pred_over_obs": 0.16202798254851813,
+          "median_log_ratio": -2.001460777204028,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 16,
+              "mae": 110.5625,
+              "signed_bias": -110.5625,
+              "wape": 0.9635076252723311,
+              "total_ratio_pred_over_obs": 0.03649237472766884,
+              "median_log_ratio": -3.0365222670502026
+            },
+            "modis_10_100": {
+              "n": 32,
+              "mae": 118.78125,
+              "signed_bias": -118.78125,
+              "wape": 0.7900644356682602,
+              "total_ratio_pred_over_obs": 0.20993556433173977,
+              "median_log_ratio": -1.5333255001170785
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 0.7708333333333334
+          },
+          "band_median_width": {
+            "absolute": 27559.5,
+            "multiplicative": 356.00692155570204
+          }
+        },
+        "global_ratio": {
+          "n": 48,
+          "mae": 179.03009200641512,
+          "signed_bias": 107.32196969696969,
+          "wape": 1.2928305124579398,
+          "total_ratio_pred_over_obs": 1.7750044449307276,
+          "median_log_ratio": 0.2956105249561565,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 16,
+              "mae": 78.75792922258799,
+              "signed_bias": -68.87625031653585,
+              "wape": 0.6863436097829019,
+              "total_ratio_pred_over_obs": 0.3997712390715832,
+              "median_log_ratio": -0.8786235951613564
+            },
+            "modis_10_100": {
+              "n": 32,
+              "mae": 229.16617339832868,
+              "signed_bias": 195.42107970372246,
+              "wape": 1.5242813445742087,
+              "total_ratio_pred_over_obs": 2.299828424551885,
+              "median_log_ratio": 0.8328410729288187
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 0.8125
+          },
+          "band_median_width": {
+            "absolute": 21213.81051847837,
+            "multiplicative": 979.4290087282607
+          }
+        },
+        "seasonal_ratio_B1": {
+          "n": 48,
+          "mae": 179.03009200641512,
+          "signed_bias": 107.32196969696969,
+          "wape": 1.2928305124579398,
+          "total_ratio_pred_over_obs": 1.7750044449307276,
+          "median_log_ratio": 0.2956105249561565,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 16,
+              "mae": 78.75792922258799,
+              "signed_bias": -68.87625031653585,
+              "wape": 0.6863436097829019,
+              "total_ratio_pred_over_obs": 0.3997712390715832,
+              "median_log_ratio": -0.8786235951613564
+            },
+            "modis_10_100": {
+              "n": 32,
+              "mae": 229.16617339832868,
+              "signed_bias": 195.42107970372246,
+              "wape": 1.5242813445742087,
+              "total_ratio_pred_over_obs": 2.299828424551885,
+              "median_log_ratio": 0.8328410729288187
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 0.8125
+          },
+          "band_median_width": {
+            "absolute": 21213.81051847837,
+            "multiplicative": 979.4290087282607
+          }
+        },
+        "linear": {
+          "n": 48,
+          "mae": 162.38884384223675,
+          "signed_bias": 0.698579264906563,
+          "wape": 1.1726590197724334,
+          "total_ratio_pred_over_obs": 1.0050446524320016,
+          "median_log_ratio": -1.2791543788170865,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 16,
+              "mae": 114.75,
+              "signed_bias": -114.75,
+              "wape": 1.0,
+              "total_ratio_pred_over_obs": 0.0,
+              "median_log_ratio": -4.212100162283536
+            },
+            "modis_10_100": {
+              "n": 32,
+              "mae": 186.20826576335517,
+              "signed_bias": 58.42286889735984,
+              "wape": 1.2385500944559065,
+              "total_ratio_pred_over_obs": 1.3885952618406807,
+              "median_log_ratio": 0.3014675266807314
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 0.6666666666666666
+          },
+          "band_median_width": {
+            "absolute": 24122.88998091311,
+            "multiplicative": 2462.4329060919304
+          }
+        },
+        "loglinear": {
+          "n": 48,
+          "mae": 170.758911750891,
+          "signed_bias": 111.84495639790445,
+          "wape": 1.2331018149605488,
+          "total_ratio_pred_over_obs": 1.8076663016547936,
+          "median_log_ratio": 0.5053957336574358,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 16,
+              "mae": 70.21063163672765,
+              "signed_bias": -51.47346457854146,
+              "wape": 0.6118573563113521,
+              "total_ratio_pred_over_obs": 0.5514295025835166,
+              "median_log_ratio": -0.505246031018214
+            },
+            "modis_10_100": {
+              "n": 32,
+              "mae": 221.0330518079727,
+              "signed_bias": 193.5041668861274,
+              "wape": 1.4701845058938112,
+              "total_ratio_pred_over_obs": 2.2870782249752812,
+              "median_log_ratio": 0.8395679158306135
+            }
+          },
+          "band_coverage": {
+            "absolute": 1.0,
+            "multiplicative": 0.8958333333333334
+          },
+          "band_median_width": {
+            "absolute": 26035.896122644306,
+            "multiplicative": 1488.340738668015
+          }
+        }
+      },
+      "zambia": {
+        "months": 48,
+        "train_regions": [
+          "chile",
+          "greece",
+          "portugal_mainland",
+          "uruguay"
+        ],
+        "domain": {
+          "train_modis_range": [
+            0.0,
+            2265.0
+          ],
+          "test_modis_range": [
+            4.0,
+            12383.0
+          ],
+          "fraction_test_months_outside_train_range": 0.375,
+          "pooled_ratio_train": 4.10332060627097,
+          "pooled_ratio_test_observed": 11.777013396031988
+        },
+        "raw": {
+          "n": 48,
+          "mae": 30939.458333333332,
+          "signed_bias": -30939.458333333332,
+          "wape": 0.9150888288590273,
+          "total_ratio_pred_over_obs": 0.08491117114097269,
+          "median_log_ratio": -2.6075288520852227,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 5,
+              "mae": 95.4,
+              "signed_bias": -95.4,
+              "wape": 0.93713163064833,
+              "total_ratio_pred_over_obs": 0.06286836935166994,
+              "median_log_ratio": -2.6996819514316934
+            },
+            "modis_10_100": {
+              "n": 10,
+              "mae": 428.1,
+              "signed_bias": -428.1,
+              "wape": 0.94067237969677,
+              "total_ratio_pred_over_obs": 0.05932762030323006,
+              "median_log_ratio": -2.4639770941372157
+            },
+            "modis_100_1000": {
+              "n": 10,
+              "mae": 5370.4,
+              "signed_bias": -5370.4,
+              "wape": 0.936327498430853,
+              "total_ratio_pred_over_obs": 0.06367250156914708,
+              "median_log_ratio": -2.784146971152042
+            },
+            "modis_1000_inf": {
+              "n": 23,
+              "mae": 62027.47826086957,
+              "signed_bias": -62027.47826086957,
+              "wape": 0.9142263918794217,
+              "total_ratio_pred_over_obs": 0.08577360812057828,
+              "median_log_ratio": -2.52861450178846
+            }
+          },
+          "band_coverage": {
+            "absolute": 0.2708333333333333,
+            "multiplicative": 0.8958333333333334
+          },
+          "band_median_width": {
+            "absolute": 1544.0,
+            "multiplicative": 19045.572139303476
+          }
+        },
+        "global_ratio": {
+          "n": 48,
+          "mae": 22030.212787805165,
+          "signed_bias": -22030.212787805165,
+          "wape": 0.651582241754646,
+          "total_ratio_pred_over_obs": 0.3484177582453542,
+          "median_log_ratio": -1.1979292601291063,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 5,
+              "mae": 75.5387481198658,
+              "signed_bias": -75.5387481198658,
+              "wape": 0.7420309245566384,
+              "total_ratio_pred_over_obs": 0.2579690754433616,
+              "median_log_ratio": -1.387194118926898
+            },
+            "modis_10_100": {
+              "n": 10,
+              "mae": 344.3103436306838,
+              "signed_bias": -344.3103436306838,
+              "wape": 0.7565597530887361,
+              "total_ratio_pred_over_obs": 0.24344024691126392,
+              "median_log_ratio": -1.0930719105518498
+            },
+            "modis_100_1000": {
+              "n": 10,
+              "mae": 4237.067314589842,
+              "signed_bias": -4237.067314589842,
+              "wape": 0.7387313122584981,
+              "total_ratio_pred_over_obs": 0.2612686877415019,
+              "median_log_ratio": -1.3764282810476178
+            },
+            "modis_1000_inf": {
+              "n": 23,
+              "mae": 43967.77145616709,
+              "signed_bias": -43967.77145616709,
+              "wape": 0.64804338632462,
+              "total_ratio_pred_over_obs": 0.35195661367537995,
+              "median_log_ratio": -1.1168985492425878
+            }
+          },
+          "band_coverage": {
+            "absolute": 0.2708333333333333,
+            "multiplicative": 0.9583333333333334
+          },
+          "band_median_width": {
+            "absolute": 1320.3118587047938,
+            "multiplicative": 23812.737928557282
+          }
+        },
+        "seasonal_ratio_B1": {
+          "n": 48,
+          "mae": 22030.212787805165,
+          "signed_bias": -22030.212787805165,
+          "wape": 0.651582241754646,
+          "total_ratio_pred_over_obs": 0.3484177582453542,
+          "median_log_ratio": -1.1979292601291063,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 5,
+              "mae": 75.5387481198658,
+              "signed_bias": -75.5387481198658,
+              "wape": 0.7420309245566384,
+              "total_ratio_pred_over_obs": 0.2579690754433616,
+              "median_log_ratio": -1.387194118926898
+            },
+            "modis_10_100": {
+              "n": 10,
+              "mae": 344.3103436306838,
+              "signed_bias": -344.3103436306838,
+              "wape": 0.7565597530887361,
+              "total_ratio_pred_over_obs": 0.24344024691126392,
+              "median_log_ratio": -1.0930719105518498
+            },
+            "modis_100_1000": {
+              "n": 10,
+              "mae": 4237.067314589842,
+              "signed_bias": -4237.067314589842,
+              "wape": 0.7387313122584981,
+              "total_ratio_pred_over_obs": 0.2612686877415019,
+              "median_log_ratio": -1.3764282810476178
+            },
+            "modis_1000_inf": {
+              "n": 23,
+              "mae": 43967.77145616709,
+              "signed_bias": -43967.77145616709,
+              "wape": 0.64804338632462,
+              "total_ratio_pred_over_obs": 0.35195661367537995,
+              "median_log_ratio": -1.1168985492425878
+            }
+          },
+          "band_coverage": {
+            "absolute": 0.2708333333333333,
+            "multiplicative": 0.9583333333333334
+          },
+          "band_median_width": {
+            "absolute": 1320.3118587047938,
+            "multiplicative": 23812.737928557282
+          }
+        },
+        "linear": {
+          "n": 48,
+          "mae": 27379.97467537592,
+          "signed_bias": -27353.557991685393,
+          "wape": 0.8098108470401333,
+          "total_ratio_pred_over_obs": 0.1909704727839007,
+          "median_log_ratio": -1.437179969064113,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 5,
+              "mae": 84.5558323764344,
+              "signed_bias": 84.5558323764344,
+              "wape": 0.8306073907311827,
+              "total_ratio_pred_over_obs": 1.8306073907311828,
+              "median_log_ratio": 0.6213972187796969
+            },
+            "modis_10_100": {
+              "n": 10,
+              "mae": 265.89441478290894,
+              "signed_bias": -223.65016544480923,
+              "wape": 0.5842549215181475,
+              "total_ratio_pred_over_obs": 0.5085691816198435,
+              "median_log_ratio": -0.23741622771669132
+            },
+            "modis_100_1000": {
+              "n": 10,
+              "mae": 4763.820479189693,
+              "signed_bias": -4763.820479189693,
+              "wape": 0.8305705556854894,
+              "total_ratio_pred_over_obs": 0.16942944431451065,
+              "median_log_ratio": -1.630868222187073
+            },
+            "modis_1000_inf": {
+              "n": 23,
+              "mae": 54935.60244854068,
+              "signed_bias": -54935.60244854068,
+              "wape": 0.8096988467115475,
+              "total_ratio_pred_over_obs": 0.19030115328845237,
+              "median_log_ratio": -1.7368587368331774
+            }
+          },
+          "band_coverage": {
+            "absolute": 0.2708333333333333,
+            "multiplicative": 0.6458333333333334
+          },
+          "band_median_width": {
+            "absolute": 1348.1776455076833,
+            "multiplicative": 10568.944078807253
+          }
+        },
+        "loglinear": {
+          "n": 48,
+          "mae": 30917.05482018911,
+          "signed_bias": -30912.18963478522,
+          "wape": 0.9144262056034874,
+          "total_ratio_pred_over_obs": 0.08571769080107984,
+          "median_log_ratio": -1.6217602227985417,
+          "by_activity": {
+            "modis_0_10": {
+              "n": 5,
+              "mae": 11.302376044765031,
+              "signed_bias": 0.08845690653126895,
+              "wape": 0.11102530495839913,
+              "total_ratio_pred_over_obs": 1.0008689283549241,
+              "median_log_ratio": -0.07061920143136807
+            },
+            "modis_10_100": {
+              "n": 10,
+              "mae": 251.2272613087266,
+              "signed_bias": -233.56978784572584,
+              "wape": 0.5520265025460923,
+              "total_ratio_pred_over_obs": 0.48677260416232504,
+              "median_log_ratio": -0.2545234441060479
+            },
+            "modis_100_1000": {
+              "n": 10,
+              "mae": 4727.3502529720045,
+              "signed_bias": -4727.3502529720045,
+              "wape": 0.8242119835713796,
+              "total_ratio_pred_over_obs": 0.17578801642862038,
+              "median_log_ratio": -1.4928851941345411
+            },
+            "modis_1000_inf": {
+              "n": 23,
+              "mae": 62355.49323243679,
+              "signed_bias": -62355.49323243679,
+              "wape": 0.9190610224713205,
+              "total_ratio_pred_over_obs": 0.08093897752867958,
+              "median_log_ratio": -2.419665676981749
+            }
+          },
+          "band_coverage": {
+            "absolute": 0.2708333333333333,
+            "multiplicative": 0.4166666666666667
+          },
+          "band_median_width": {
+            "absolute": 1326.812967914093,
+            "multiplicative": 6661.144164294805
+          }
+        }
+      }
+    },
+    "status": "exploratory_reanalysis_of_previously_inspected_data",
+    "caveat": "Train and test share calendar years, so this isolates geographic transfer, not temporal transfer."
+  },
+  "ratio_by_activity_aqua": {
+    "chile": {
+      "modis_0_10": {
+        "months": 0,
+        "pooled_ratio": null
+      },
+      "modis_10_100": {
+        "months": 7,
+        "pooled_ratio": 5.24198250728863
+      },
+      "modis_100_1000": {
+        "months": 40,
+        "pooled_ratio": 3.2244537275064267
+      },
+      "modis_1000_inf": {
+        "months": 1,
+        "pooled_ratio": 1.7445993031358884
+      }
+    },
+    "greece": {
+      "modis_0_10": {
+        "months": 12,
+        "pooled_ratio": 20.462962962962962
+      },
+      "modis_10_100": {
+        "months": 29,
+        "pooled_ratio": 4.934952298352125
+      },
+      "modis_100_1000": {
+        "months": 7,
+        "pooled_ratio": 2.727272727272727
+      },
+      "modis_1000_inf": {
+        "months": 0,
+        "pooled_ratio": null
+      }
+    },
+    "portugal_mainland": {
+      "modis_0_10": {
+        "months": 15,
+        "pooled_ratio": 13.421052631578947
+      },
+      "modis_10_100": {
+        "months": 25,
+        "pooled_ratio": 3.7042735042735044
+      },
+      "modis_100_1000": {
+        "months": 8,
+        "pooled_ratio": 1.7444626743232157
+      },
+      "modis_1000_inf": {
+        "months": 0,
+        "pooled_ratio": null
+      }
+    },
+    "uruguay": {
+      "modis_0_10": {
+        "months": 3,
+        "pooled_ratio": 10.181818181818182
+      },
+      "modis_10_100": {
+        "months": 41,
+        "pooled_ratio": 3.1866330390920554
+      },
+      "modis_100_1000": {
+        "months": 4,
+        "pooled_ratio": 2.7527881040892193
+      },
+      "modis_1000_inf": {
+        "months": 0,
+        "pooled_ratio": null
+      }
+    },
+    "zambia": {
+      "modis_0_10": {
+        "months": 1,
+        "pooled_ratio": 9.666666666666666
+      },
+      "modis_10_100": {
+        "months": 13,
+        "pooled_ratio": 10.792284866468842
+      },
+      "modis_100_1000": {
+        "months": 9,
+        "pooled_ratio": 7.24326710816777
+      },
+      "modis_1000_inf": {
+        "months": 25,
+        "pooled_ratio": 3.4359703005466846
+      }
+    }
+  },
+  "rolling_band_aqua": {
+    "satellite": "A",
+    "candidate": "seasonal_ratio_B1",
+    "fit_region": "portugal_mainland",
+    "nominal": 0.9,
+    "protocol": "rolling: fit < Y-1, calibrate Y-1 (12 months), score Y",
+    "status": "exploratory_reanalysis_of_previously_inspected_data",
+    "n_folds": 10,
+    "strata": {
+      "all_geographic": {
+        "months": 192,
+        "share_above_calibration_range": 0.3177083333333333,
+        "absolute": {
+          "coverage_all": 0.609375,
+          "coverage_when_shown_under_rule": 0.8015267175572519,
+          "coverage_withheld": 0.19672131147540983,
+          "median_width": 238.98757740934127
+        },
+        "normalized_sqrt": {
+          "coverage_all": 0.6822916666666666,
+          "coverage_when_shown_under_rule": 0.7709923664122137,
+          "coverage_withheld": 0.4918032786885246,
+          "median_width": 378.77855992276534
+        },
+        "multiplicative": {
+          "coverage_all": 0.9270833333333334,
+          "coverage_when_shown_under_rule": 0.9007633587786259,
+          "coverage_withheld": 0.9836065573770492,
+          "median_width": 1335.2716140592202
+        }
+      },
+      "all_temporal": {
+        "months": 120,
+        "share_above_calibration_range": 0.075,
+        "absolute": {
+          "coverage_all": 0.9083333333333333,
+          "coverage_when_shown_under_rule": 0.9369369369369369,
+          "coverage_withheld": 0.5555555555555556,
+          "median_width": 249.00824860587466
+        },
+        "normalized_sqrt": {
+          "coverage_all": 0.8916666666666667,
+          "coverage_when_shown_under_rule": 0.8918918918918919,
+          "coverage_withheld": 0.8888888888888888,
+          "median_width": 190.10047710880127
+        },
+        "multiplicative": {
+          "coverage_all": 0.9083333333333333,
+          "coverage_when_shown_under_rule": 0.9009009009009009,
+          "coverage_withheld": 1.0,
+          "median_width": 365.8043905533526
+        }
+      },
+      "region|chile": {
+        "months": 48,
+        "share_above_calibration_range": 0.5208333333333334,
+        "absolute": {
+          "coverage_all": 0.5625,
+          "coverage_when_shown_under_rule": 0.7391304347826086,
+          "coverage_withheld": 0.4,
+          "median_width": 293.679273623455
+        },
+        "normalized_sqrt": {
+          "coverage_all": 0.8333333333333334,
+          "coverage_when_shown_under_rule": 0.782608695652174,
+          "coverage_withheld": 0.88,
+          "median_width": 747.0052437723007
+        },
+        "multiplicative": {
+          "coverage_all": 0.9791666666666666,
+          "coverage_when_shown_under_rule": 0.9565217391304348,
+          "coverage_withheld": 1.0,
+          "median_width": 4210.095707118272
+        }
+      },
+      "region|greece": {
+        "months": 48,
+        "share_above_calibration_range": 0.041666666666666664,
+        "absolute": {
+          "coverage_all": 0.6458333333333334,
+          "coverage_when_shown_under_rule": 0.6739130434782609,
+          "coverage_withheld": 0.0,
+          "median_width": 238.98757740934087
+        },
+        "normalized_sqrt": {
+          "coverage_all": 0.7083333333333334,
+          "coverage_when_shown_under_rule": 0.6956521739130435,
+          "coverage_withheld": 1.0,
+          "median_width": 204.23984509608022
+        },
+        "multiplicative": {
+          "coverage_all": 0.8541666666666666,
+          "coverage_when_shown_under_rule": 0.8478260869565217,
+          "coverage_withheld": 1.0,
+          "median_width": 525.3276584136679
+        }
+      },
+      "region|portugal_mainland": {
+        "months": 120,
+        "share_above_calibration_range": 0.075,
+        "absolute": {
+          "coverage_all": 0.9083333333333333,
+          "coverage_when_shown_under_rule": 0.9369369369369369,
+          "coverage_withheld": 0.5555555555555556,
+          "median_width": 249.00824860587466
+        },
+        "normalized_sqrt": {
+          "coverage_all": 0.8916666666666667,
+          "coverage_when_shown_under_rule": 0.8918918918918919,
+          "coverage_withheld": 0.8888888888888888,
+          "median_width": 190.10047710880127
+        },
+        "multiplicative": {
+          "coverage_all": 0.9083333333333333,
+          "coverage_when_shown_under_rule": 0.9009009009009009,
+          "coverage_withheld": 1.0,
+          "median_width": 365.8043905533526
+        }
+      },
+      "region|uruguay": {
+        "months": 48,
+        "share_above_calibration_range": 0.020833333333333332,
+        "absolute": {
+          "coverage_all": 0.9791666666666666,
+          "coverage_when_shown_under_rule": 0.9787234042553191,
+          "coverage_withheld": 1.0,
+          "median_width": 250.81280902320339
+        },
+        "normalized_sqrt": {
+          "coverage_all": 0.9791666666666666,
+          "coverage_when_shown_under_rule": 0.9787234042553191,
+          "coverage_withheld": 1.0,
+          "median_width": 256.50208594007336
+        },
+        "multiplicative": {
+          "coverage_all": 1.0,
+          "coverage_when_shown_under_rule": 1.0,
+          "coverage_withheld": 1.0,
+          "median_width": 557.3049457145178
+        }
+      },
+      "region|zambia": {
+        "months": 48,
+        "share_above_calibration_range": 0.6875,
+        "absolute": {
+          "coverage_all": 0.25,
+          "coverage_when_shown_under_rule": 0.7333333333333333,
+          "coverage_withheld": 0.030303030303030304,
+          "median_width": 250.81280902320378
+        },
+        "normalized_sqrt": {
+          "coverage_all": 0.20833333333333334,
+          "coverage_when_shown_under_rule": 0.3333333333333333,
+          "coverage_withheld": 0.15151515151515152,
+          "median_width": 1776.279646250858
+        },
+        "multiplicative": {
+          "coverage_all": 0.875,
+          "coverage_when_shown_under_rule": 0.6666666666666666,
+          "coverage_withheld": 0.9696969696969697,
+          "median_width": 28319.78232586094
+        }
+      },
+      "temporal+geographic|modis_0_10": {
+        "months": 16,
+        "share_above_calibration_range": 0.0,
+        "absolute": {
+          "coverage_all": 0.8125,
+          "coverage_when_shown_under_rule": 0.8125,
+          "coverage_withheld": null,
+          "median_width": 113.5697792010787
+        },
+        "normalized_sqrt": {
+          "coverage_all": 0.4375,
+          "coverage_when_shown_under_rule": 0.4375,
+          "coverage_withheld": null,
+          "median_width": 68.35643917012597
+        },
+        "multiplicative": {
+          "coverage_all": 0.5625,
+          "coverage_when_shown_under_rule": 0.5625,
+          "coverage_withheld": null,
+          "median_width": 73.99166110657589
+        }
+      },
+      "temporal+geographic|modis_1000_inf": {
+        "months": 26,
+        "share_above_calibration_range": 1.0,
+        "absolute": {
+          "coverage_all": 0.0,
+          "coverage_when_shown_under_rule": null,
+          "coverage_withheld": 0.0,
+          "median_width": 384.7578027906129
+        },
+        "normalized_sqrt": {
+          "coverage_all": 0.15384615384615385,
+          "coverage_when_shown_under_rule": null,
+          "coverage_withheld": 0.15384615384615385,
+          "median_width": 5615.38083948876
+        },
+        "multiplicative": {
+          "coverage_all": 1.0,
+          "coverage_when_shown_under_rule": null,
+          "coverage_withheld": 1.0,
+          "median_width": 277045.519473112
+        }
+      },
+      "temporal+geographic|modis_100_1000": {
+        "months": 60,
+        "share_above_calibration_range": 0.5833333333333334,
+        "absolute": {
+          "coverage_all": 0.55,
+          "coverage_when_shown_under_rule": 0.84,
+          "coverage_withheld": 0.34285714285714286,
+          "median_width": 594.9061331389566
+        },
+        "normalized_sqrt": {
+          "coverage_all": 0.7666666666666667,
+          "coverage_when_shown_under_rule": 0.8,
+          "coverage_withheld": 0.7428571428571429,
+          "median_width": 763.6761873423943
+        },
+        "multiplicative": {
+          "coverage_all": 0.9666666666666667,
+          "coverage_when_shown_under_rule": 0.96,
+          "coverage_withheld": 0.9714285714285714,
+          "median_width": 4636.372015816419
+        }
+      },
+      "temporal+geographic|modis_10_100": {
+        "months": 90,
+        "share_above_calibration_range": 0.0,
+        "absolute": {
+          "coverage_all": 0.7888888888888889,
+          "coverage_when_shown_under_rule": 0.7888888888888889,
+          "coverage_withheld": null,
+          "median_width": 250.81280902320339
+        },
+        "normalized_sqrt": {
+          "coverage_all": 0.8222222222222222,
+          "coverage_when_shown_under_rule": 0.8222222222222222,
+          "coverage_withheld": null,
+          "median_width": 242.6420102290919
+        },
+        "multiplicative": {
+          "coverage_all": 0.9444444444444444,
+          "coverage_when_shown_under_rule": 0.9444444444444444,
+          "coverage_withheld": null,
+          "median_width": 566.1724176404811
+        }
+      },
+      "temporal|modis_0_10": {
+        "months": 29,
+        "share_above_calibration_range": 0.0,
+        "absolute": {
+          "coverage_all": 0.9310344827586207,
+          "coverage_when_shown_under_rule": 0.9310344827586207,
+          "coverage_withheld": null,
+          "median_width": 146.40131474488712
+        },
+        "normalized_sqrt": {
+          "coverage_all": 0.7241379310344828,
+          "coverage_when_shown_under_rule": 0.7241379310344828,
+          "coverage_withheld": null,
+          "median_width": 90.40311050977516
+        },
+        "multiplicative": {
+          "coverage_all": 0.6896551724137931,
+          "coverage_when_shown_under_rule": 0.6896551724137931,
+          "coverage_withheld": null,
+          "median_width": 68.86704579393387
+        }
+      },
+      "temporal|modis_100_1000": {
+        "months": 21,
+        "share_above_calibration_range": 0.42857142857142855,
+        "absolute": {
+          "coverage_all": 0.6666666666666666,
+          "coverage_when_shown_under_rule": 0.75,
+          "coverage_withheld": 0.5555555555555556,
+          "median_width": 607.779022828827
+        },
+        "normalized_sqrt": {
+          "coverage_all": 0.8571428571428571,
+          "coverage_when_shown_under_rule": 0.8333333333333334,
+          "coverage_withheld": 0.8888888888888888,
+          "median_width": 688.2688137785506
+        },
+        "multiplicative": {
+          "coverage_all": 1.0,
+          "coverage_when_shown_under_rule": 1.0,
+          "coverage_withheld": 1.0,
+          "median_width": 4559.164556378049
+        }
+      },
+      "temporal|modis_10_100": {
+        "months": 70,
+        "share_above_calibration_range": 0.0,
+        "absolute": {
+          "coverage_all": 0.9714285714285714,
+          "coverage_when_shown_under_rule": 0.9714285714285714,
+          "coverage_withheld": null,
+          "median_width": 193.21770358371907
+        },
+        "normalized_sqrt": {
+          "coverage_all": 0.9714285714285714,
+          "coverage_when_shown_under_rule": 0.9714285714285714,
+          "coverage_withheld": null,
+          "median_width": 202.89783327804855
+        },
+        "multiplicative": {
+          "coverage_all": 0.9714285714285714,
+          "coverage_when_shown_under_rule": 0.9714285714285714,
+          "coverage_withheld": null,
+          "median_width": 361.2933539705051
+        }
+      }
+    },
+    "caveat": "Months within a fold share one calibration year and are dependent; coverage proportions are descriptive."
+  },
+  "rolling_band_terra": {
+    "satellite": "T",
+    "candidate": "seasonal_ratio_B1",
+    "fit_region": "portugal_mainland",
+    "nominal": 0.9,
+    "protocol": "rolling: fit < Y-1, calibrate Y-1 (12 months), score Y",
+    "status": "exploratory_reanalysis_of_previously_inspected_data",
+    "n_folds": 10,
+    "strata": {
+      "all_geographic": {
+        "months": 192,
+        "share_above_calibration_range": 0.2552083333333333,
+        "absolute": {
+          "coverage_all": 0.5364583333333334,
+          "coverage_when_shown_under_rule": 0.7062937062937062,
+          "coverage_withheld": 0.04081632653061224,
+          "median_width": 284.0782056118155
+        },
+        "normalized_sqrt": {
+          "coverage_all": 0.390625,
+          "coverage_when_shown_under_rule": 0.44755244755244755,
+          "coverage_withheld": 0.22448979591836735,
+          "median_width": 279.1962029606656
+        },
+        "multiplicative": {
+          "coverage_all": 0.6145833333333334,
+          "coverage_when_shown_under_rule": 0.5804195804195804,
+          "coverage_withheld": 0.7142857142857143,
+          "median_width": 604.5343998007841
+        }
+      },
+      "all_temporal": {
+        "months": 120,
+        "share_above_calibration_range": 0.058333333333333334,
+        "absolute": {
+          "coverage_all": 0.9333333333333333,
+          "coverage_when_shown_under_rule": 0.9734513274336283,
+          "coverage_withheld": 0.2857142857142857,
+          "median_width": 246.856866958708
+        },
+        "normalized_sqrt": {
+          "coverage_all": 0.85,
+          "coverage_when_shown_under_rule": 0.8761061946902655,
+          "coverage_withheld": 0.42857142857142855,
+          "median_width": 229.49889688200233
+        },
+        "multiplicative": {
+          "coverage_all": 0.8916666666666667,
+          "coverage_when_shown_under_rule": 0.8849557522123894,
+          "coverage_withheld": 1.0,
+          "median_width": 287.22335442586217
+        }
+      },
+      "region|chile": {
+        "months": 48,
+        "share_above_calibration_range": 0.375,
+        "absolute": {
+          "coverage_all": 0.375,
+          "coverage_when_shown_under_rule": 0.5333333333333333,
+          "coverage_withheld": 0.1111111111111111,
+          "median_width": 293.62903723974273
+        },
+        "normalized_sqrt": {
+          "coverage_all": 0.4791666666666667,
+          "coverage_when_shown_under_rule": 0.43333333333333335,
+          "coverage_withheld": 0.5555555555555556,
+          "median_width": 541.4076522857058
+        },
+        "multiplicative": {
+          "coverage_all": 0.8541666666666666,
+          "coverage_when_shown_under_rule": 0.7666666666666667,
+          "coverage_withheld": 1.0,
+          "median_width": 2682.325454344158
+        }
+      },
+      "region|greece": {
+        "months": 48,
+        "share_above_calibration_range": 0.020833333333333332,
+        "absolute": {
+          "coverage_all": 0.7291666666666666,
+          "coverage_when_shown_under_rule": 0.7446808510638298,
+          "coverage_withheld": 0.0,
+          "median_width": 224.80715847163015
+        },
+        "normalized_sqrt": {
+          "coverage_all": 0.375,
+          "coverage_when_shown_under_rule": 0.3829787234042553,
+          "coverage_withheld": 0.0,
+          "median_width": 149.05315315487468
+        },
+        "multiplicative": {
+          "coverage_all": 0.5208333333333334,
+          "coverage_when_shown_under_rule": 0.5106382978723404,
+          "coverage_withheld": 1.0,
+          "median_width": 191.94980188481384
+        }
+      },
+      "region|portugal_mainland": {
+        "months": 120,
+        "share_above_calibration_range": 0.058333333333333334,
+        "absolute": {
+          "coverage_all": 0.9333333333333333,
+          "coverage_when_shown_under_rule": 0.9734513274336283,
+          "coverage_withheld": 0.2857142857142857,
+          "median_width": 246.856866958708
+        },
+        "normalized_sqrt": {
+          "coverage_all": 0.85,
+          "coverage_when_shown_under_rule": 0.8761061946902655,
+          "coverage_withheld": 0.42857142857142855,
+          "median_width": 229.49889688200233
+        },
+        "multiplicative": {
+          "coverage_all": 0.8916666666666667,
+          "coverage_when_shown_under_rule": 0.8849557522123894,
+          "coverage_withheld": 1.0,
+          "median_width": 287.22335442586217
+        }
+      },
+      "region|uruguay": {
+        "months": 48,
+        "share_above_calibration_range": 0.0,
+        "absolute": {
+          "coverage_all": 0.8125,
+          "coverage_when_shown_under_rule": 0.8125,
+          "coverage_withheld": null,
+          "median_width": 254.07130129219325
+        },
+        "normalized_sqrt": {
+          "coverage_all": 0.625,
+          "coverage_when_shown_under_rule": 0.625,
+          "coverage_withheld": null,
+          "median_width": 124.06175816528543
+        },
+        "multiplicative": {
+          "coverage_all": 0.6666666666666666,
+          "coverage_when_shown_under_rule": 0.6666666666666666,
+          "coverage_withheld": null,
+          "median_width": 208.87226760459316
+        }
+      },
+      "region|zambia": {
+        "months": 48,
+        "share_above_calibration_range": 0.625,
+        "absolute": {
+          "coverage_all": 0.22916666666666666,
+          "coverage_when_shown_under_rule": 0.6111111111111112,
+          "coverage_withheld": 0.0,
+          "median_width": 284.0782056118171
+        },
+        "normalized_sqrt": {
+          "coverage_all": 0.08333333333333333,
+          "coverage_when_shown_under_rule": 0.16666666666666666,
+          "coverage_withheld": 0.03333333333333333,
+          "median_width": 1183.8626665379911
+        },
+        "multiplicative": {
+          "coverage_all": 0.4166666666666667,
+          "coverage_when_shown_under_rule": 0.2222222222222222,
+          "coverage_withheld": 0.5333333333333333,
+          "median_width": 13414.113917435196
+        }
+      },
+      "temporal+geographic|modis_0_10": {
+        "months": 37,
+        "share_above_calibration_range": 0.0,
+        "absolute": {
+          "coverage_all": 0.8648648648648649,
+          "coverage_when_shown_under_rule": 0.8648648648648649,
+          "coverage_withheld": null,
+          "median_width": 207.2132847092539
+        },
+        "normalized_sqrt": {
+          "coverage_all": 0.32432432432432434,
+          "coverage_when_shown_under_rule": 0.32432432432432434,
+          "coverage_withheld": null,
+          "median_width": 68.37698390136703
+        },
+        "multiplicative": {
+          "coverage_all": 0.2972972972972973,
+          "coverage_when_shown_under_rule": 0.2972972972972973,
+          "coverage_withheld": null,
+          "median_width": 56.08050792171178
+        }
+      },
+      "temporal+geographic|modis_1000_inf": {
+        "months": 24,
+        "share_above_calibration_range": 1.0,
+        "absolute": {
+          "coverage_all": 0.0,
+          "coverage_when_shown_under_rule": null,
+          "coverage_withheld": 0.0,
+          "median_width": 349.2523875151601
+        },
+        "normalized_sqrt": {
+          "coverage_all": 0.0,
+          "coverage_when_shown_under_rule": null,
+          "coverage_withheld": 0.0,
+          "median_width": 2973.789236534445
+        },
+        "multiplicative": {
+          "coverage_all": 0.4583333333333333,
+          "coverage_when_shown_under_rule": null,
+          "coverage_withheld": 0.4583333333333333,
+          "median_width": 68635.52466293151
+        }
+      },
+      "temporal+geographic|modis_100_1000": {
+        "months": 45,
+        "share_above_calibration_range": 0.5555555555555556,
+        "absolute": {
+          "coverage_all": 0.24444444444444444,
+          "coverage_when_shown_under_rule": 0.45,
+          "coverage_withheld": 0.08,
+          "median_width": 284.07820561181563
+        },
+        "normalized_sqrt": {
+          "coverage_all": 0.4444444444444444,
+          "coverage_when_shown_under_rule": 0.45,
+          "coverage_withheld": 0.44,
+          "median_width": 721.7615645421873
+        },
+        "multiplicative": {
+          "coverage_all": 0.8444444444444444,
+          "coverage_when_shown_under_rule": 0.7,
+          "coverage_withheld": 0.96,
+          "median_width": 3547.448382078846
+        }
+      },
+      "temporal+geographic|modis_10_100": {
+        "months": 86,
+        "share_above_calibration_range": 0.0,
+        "absolute": {
+          "coverage_all": 0.6976744186046512,
+          "coverage_when_shown_under_rule": 0.6976744186046512,
+          "coverage_withheld": null,
+          "median_width": 261.5943490656896
+        },
+        "normalized_sqrt": {
+          "coverage_all": 0.5,
+          "coverage_when_shown_under_rule": 0.5,
+          "coverage_withheld": null,
+          "median_width": 213.52997322857507
+        },
+        "multiplicative": {
+          "coverage_all": 0.6744186046511628,
+          "coverage_when_shown_under_rule": 0.6744186046511628,
+          "coverage_withheld": null,
+          "median_width": 350.87462110204046
+        }
+      },
+      "temporal|modis_0_10": {
+        "months": 28,
+        "share_above_calibration_range": 0.0,
+        "absolute": {
+          "coverage_all": 1.0,
+          "coverage_when_shown_under_rule": 1.0,
+          "coverage_withheld": null,
+          "median_width": 181.92131421819394
+        },
+        "normalized_sqrt": {
+          "coverage_all": 0.8214285714285714,
+          "coverage_when_shown_under_rule": 0.8214285714285714,
+          "coverage_withheld": null,
+          "median_width": 91.33856325886802
+        },
+        "multiplicative": {
+          "coverage_all": 0.75,
+          "coverage_when_shown_under_rule": 0.75,
+          "coverage_withheld": null,
+          "median_width": 83.59335361619807
+        }
+      },
+      "temporal|modis_100_1000": {
+        "months": 16,
+        "share_above_calibration_range": 0.4375,
+        "absolute": {
+          "coverage_all": 0.625,
+          "coverage_when_shown_under_rule": 0.8888888888888888,
+          "coverage_withheld": 0.2857142857142857,
+          "median_width": 729.5956377437274
+        },
+        "normalized_sqrt": {
+          "coverage_all": 0.6875,
+          "coverage_when_shown_under_rule": 0.8888888888888888,
+          "coverage_withheld": 0.42857142857142855,
+          "median_width": 853.8387218387759
+        },
+        "multiplicative": {
+          "coverage_all": 1.0,
+          "coverage_when_shown_under_rule": 1.0,
+          "coverage_withheld": 1.0,
+          "median_width": 2128.581866560795
+        }
+      },
+      "temporal|modis_10_100": {
+        "months": 76,
+        "share_above_calibration_range": 0.0,
+        "absolute": {
+          "coverage_all": 0.9736842105263158,
+          "coverage_when_shown_under_rule": 0.9736842105263158,
+          "coverage_withheld": null,
+          "median_width": 239.70481976169592
+        },
+        "normalized_sqrt": {
+          "coverage_all": 0.8947368421052632,
+          "coverage_when_shown_under_rule": 0.8947368421052632,
+          "coverage_withheld": null,
+          "median_width": 237.09152351356178
+        },
+        "multiplicative": {
+          "coverage_all": 0.9210526315789473,
+          "coverage_when_shown_under_rule": 0.9210526315789473,
+          "coverage_withheld": null,
+          "median_width": 309.86079283035576
+        }
+      }
+    },
+    "caveat": "Months within a fold share one calibration year and are dependent; coverage proportions are descriptive."
+  },
+  "interval_strata": {
+    "T": {
+      "satellite": "T",
+      "model": "B1_shrunk_ratio",
+      "calibration_months": 12,
+      "nominal": 0.9,
+      "strata": {
+        "activity:modis_0_10": {
+          "n": 30,
+          "mae": 67.40309526297214,
+          "absolute_coverage": 0.9,
+          "absolute_median_width": 159.99638598553892,
+          "multiplicative_coverage": 0.23333333333333334,
+          "multiplicative_median_width": 26.680416188287154
+        },
+        "activity:modis_100_1000": {
+          "n": 6,
+          "mae": 299.5951475137078,
+          "absolute_coverage": 0.3333333333333333,
+          "absolute_median_width": 290.6501487974899,
+          "multiplicative_coverage": 1.0,
+          "multiplicative_median_width": 873.1166622197513
+        },
+        "activity:modis_10_100": {
+          "n": 60,
+          "mae": 64.43527396477135,
+          "absolute_coverage": 0.8833333333333333,
+          "absolute_median_width": 230.8557758516486,
+          "multiplicative_coverage": 0.7166666666666667,
+          "multiplicative_median_width": 147.31856456567343
+        },
+        "all": {
+          "n": 96,
+          "mae": 80.06021021726762,
+          "absolute_coverage": 0.8541666666666666,
+          "absolute_median_width": 203.77195100855664,
+          "multiplicative_coverage": 0.5833333333333334,
+          "multiplicative_median_width": 101.2083385783797
+        },
+        "region:portugal_mainland": {
+          "n": 48,
+          "mae": 66.11257857769353,
+          "absolute_coverage": 0.8958333333333334,
+          "absolute_median_width": 220.1940014894646,
+          "multiplicative_coverage": 0.8125,
+          "multiplicative_median_width": 129.16688812728327
+        },
+        "region:uruguay": {
+          "n": 48,
+          "mae": 94.00784185684171,
+          "absolute_coverage": 0.8125,
+          "absolute_median_width": 197.59700181144774,
+          "multiplicative_coverage": 0.3541666666666667,
+          "multiplicative_median_width": 90.69548433462717
+        },
+        "season:DJF": {
+          "n": 24,
+          "mae": 99.36085798920551,
+          "absolute_coverage": 0.7083333333333334,
+          "absolute_median_width": 173.46853156377074,
+          "multiplicative_coverage": 0.375,
+          "multiplicative_median_width": 49.61675109463384
+        },
+        "season:JJA": {
+          "n": 24,
+          "mae": 71.61108950819415,
+          "absolute_coverage": 0.875,
+          "absolute_median_width": 230.82697653011627,
+          "multiplicative_coverage": 0.7083333333333334,
+          "multiplicative_median_width": 147.2695337056738
+        },
+        "season:MAM": {
+          "n": 24,
+          "mae": 59.6886736888184,
+          "absolute_coverage": 0.9166666666666666,
+          "absolute_median_width": 244.3983065235993,
+          "multiplicative_coverage": 0.75,
+          "multiplicative_median_width": 170.3747301309583
+        },
+        "season:SON": {
+          "n": 24,
+          "mae": 89.58021968285243,
+          "absolute_coverage": 0.9166666666666666,
+          "absolute_median_width": 183.99000243932295,
+          "multiplicative_coverage": 0.5,
+          "multiplicative_median_width": 67.52956077351428
+        }
+      },
+      "caveat": "One calibration year (12 months); small strata have very imprecise coverage estimates."
+    },
+    "A": {
+      "satellite": "A",
+      "model": "B1_shrunk_ratio",
+      "calibration_months": 12,
+      "nominal": 0.9,
+      "strata": {
+        "activity:modis_0_10": {
+          "n": 18,
+          "mae": 31.401193199040524,
+          "absolute_coverage": 0.9444444444444444,
+          "absolute_median_width": 104.41283512404888,
+          "multiplicative_coverage": 0.3888888888888889,
+          "multiplicative_median_width": 42.16726020165123
+        },
+        "activity:modis_100_1000": {
+          "n": 12,
+          "mae": 156.49000604652517,
+          "absolute_coverage": 0.5,
+          "absolute_median_width": 181.309266052981,
+          "multiplicative_coverage": 1.0,
+          "multiplicative_median_width": 1371.246381781551
+        },
+        "activity:modis_10_100": {
+          "n": 66,
+          "mae": 25.137769045797974,
+          "absolute_coverage": 1.0,
+          "absolute_median_width": 176.4443856766672,
+          "multiplicative_coverage": 1.0,
+          "multiplicative_median_width": 247.9764173606494
+        },
+        "all": {
+          "n": 96,
+          "mae": 42.731190699621855,
+          "absolute_coverage": 0.9270833333333334,
+          "absolute_median_width": 173.3146901937836,
+          "multiplicative_coverage": 0.8854166666666666,
+          "multiplicative_median_width": 239.03422488311736
+        },
+        "region:portugal_mainland": {
+          "n": 48,
+          "mae": 58.8341422944145,
+          "absolute_coverage": 0.8541666666666666,
+          "absolute_median_width": 149.79435961022295,
+          "multiplicative_coverage": 0.8125,
+          "multiplicative_median_width": 171.83173685715792
+        },
+        "region:uruguay": {
+          "n": 48,
+          "mae": 26.62823910482921,
+          "absolute_coverage": 1.0,
+          "absolute_median_width": 181.30926605298097,
+          "multiplicative_coverage": 0.9583333333333334,
+          "multiplicative_median_width": 272.90379453482217
+        },
+        "season:DJF": {
+          "n": 24,
+          "mae": 35.36306963635335,
+          "absolute_coverage": 0.9583333333333334,
+          "absolute_median_width": 170.61188043012453,
+          "multiplicative_coverage": 0.8333333333333334,
+          "multiplicative_median_width": 231.3117339030927
+        },
+        "season:JJA": {
+          "n": 24,
+          "mae": 56.32022295932753,
+          "absolute_coverage": 0.8333333333333334,
+          "absolute_median_width": 173.5362584681866,
+          "multiplicative_coverage": 0.9166666666666666,
+          "multiplicative_median_width": 239.66729163592515
+        },
+        "season:MAM": {
+          "n": 24,
+          "mae": 32.972889887580344,
+          "absolute_coverage": 0.9583333333333334,
+          "absolute_median_width": 178.66595668439155,
+          "multiplicative_coverage": 0.9166666666666666,
+          "multiplicative_median_width": 254.32390888569472
+        },
+        "season:SON": {
+          "n": 24,
+          "mae": 46.26858031522618,
+          "absolute_coverage": 0.9583333333333334,
+          "absolute_median_width": 151.72530440458235,
+          "multiplicative_coverage": 0.875,
+          "multiplicative_median_width": 177.34884870049333
+        }
+      },
+      "caveat": "One calibration year (12 months); small strata have very imprecise coverage estimates."
+    }
+  },
+  "bootstrap_block_sensitivity": {
+    "T": {
+      "point_mae": 80.06021021726762,
+      "units": {
+        "year (both regions)": {
+          "blocks": 4,
+          "interval_95": [
+            65.29814680274855,
+            93.95723044135707
+          ],
+          "width": 28.65908363860852
+        },
+        "region-year": {
+          "blocks": 8,
+          "interval_95": [
+            60.469063169024764,
+            101.33628802552616
+          ],
+          "width": 40.867224856501394
+        },
+        "region-quarter": {
+          "blocks": 32,
+          "interval_95": [
+            56.49626137624351,
+            107.64856886543134
+          ],
+          "width": 51.152307489187834
+        },
+        "month (iid, ignores dependence)": {
+          "blocks": 96,
+          "interval_95": [
+            59.59955954939648,
+            106.9856308400877
+          ],
+          "width": 47.38607129069121
+        }
+      },
+      "interpretation": "Smaller blocks give narrower intervals only because they ignore seasonal and inter-annual dependence; with four test years no unit gives a reliable interval."
+    },
+    "A": {
+      "point_mae": 42.731190699621855,
+      "units": {
+        "year (both regions)": {
+          "blocks": 4,
+          "interval_95": [
+            34.96928951374439,
+            48.27850959622203
+          ],
+          "width": 13.309220082477637
+        },
+        "region-year": {
+          "blocks": 8,
+          "interval_95": [
+            29.122336735465723,
+            58.46633155504211
+          ],
+          "width": 29.343994819576388
+        },
+        "region-quarter": {
+          "blocks": 32,
+          "interval_95": [
+            28.328446148576724,
+            59.61077090735025
+          ],
+          "width": 31.282324758773527
+        },
+        "month (iid, ignores dependence)": {
+          "blocks": 96,
+          "interval_95": [
+            30.402642461965012,
+            58.72450815403421
+          ],
+          "width": 28.3218656920692
+        }
+      },
+      "interpretation": "Smaller blocks give narrower intervals only because they ignore seasonal and inter-annual dependence; with four test years no unit gives a reliable interval."
+    }
+  }
+}

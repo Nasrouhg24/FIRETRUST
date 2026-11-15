@@ -1,0 +1,54 @@
+{
+  "environment": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.9",
+    "logical_cpus": 24,
+    "processor": "Intel64 Family 6 Model 198 Stepping 2, GenuineIntel"
+  },
+  "rows": 4607351,
+  "snapshot_id": "e332e0eb4d342a42bf3b44738994a97571b26b1171befb94753557cc4fc1d273",
+  "measurements": {
+    "calendar": {
+      "cold_ms": 1080.8608999941498,
+      "warm_p50_ms": 10.64089999999851,
+      "warm_p95_ms": 11.502499981725123,
+      "repetitions": 30,
+      "response_bytes": 124875,
+      "analytics_cache": "CacheInfo(hits=30, misses=1, maxsize=32, currsize=1)",
+      "series_cache": "CacheInfo(hits=30, misses=1, maxsize=32, currsize=1)"
+    },
+    "analytics": {
+      "cold_ms": 563.1013000092935,
+      "warm_p50_ms": 39.412750003975816,
+      "warm_p95_ms": 60.930634991382234,
+      "repetitions": 30,
+      "response_bytes": 595249,
+      "analytics_cache": "CacheInfo(hits=30, misses=1, maxsize=32, currsize=1)",
+      "series_cache": "CacheInfo(hits=0, misses=0, maxsize=32, currsize=0)"
+    },
+    "timeseries": {
+      "cold_ms": 608.7472999934107,
+      "warm_p50_ms": 13.849100010702386,
+      "warm_p95_ms": 15.50723999243928,
+      "repetitions": 30,
+      "response_bytes": 184183,
+      "analytics_cache": "CacheInfo(hits=0, misses=0, maxsize=32, currsize=0)",
+      "series_cache": "CacheInfo(hits=30, misses=1, maxsize=32, currsize=1)"
+    },
+    "points_5000": {
+      "cold_ms": 260.4901000158861,
+      "warm_p50_ms": 225.7192999968538,
+      "warm_p95_ms": 271.90235999150894,
+      "repetitions": 30,
+      "response_bytes": 2072109,
+      "analytics_cache": "CacheInfo(hits=0, misses=0, maxsize=32, currsize=0)",
+      "series_cache": "CacheInfo(hits=0, misses=0, maxsize=32, currsize=0)"
+    }
+  },
+  "method": "Sequential FastAPI TestClient ASGI requests; includes serialization, excludes TCP/TLS and browser rendering. Warm analytics cache enabled; monthly series and analytics caches enabled after the first call.",
+  "cache_info": "CacheInfo(hits=0, misses=0, maxsize=32, currsize=0)",
+  "limits": [
+    "Single-user local measurements; not a production load test.",
+    "Cold OS file cache was not flushed."
+  ]
+}
