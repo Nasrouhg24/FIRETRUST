@@ -113,3 +113,18 @@ def test_failed_archive_file_never_zero_filled(payload):
     assert not [r for r in items if r['satellite']=='N' and r['month'].startswith('2023')]
     assert any(r['satellite']=='N' and r['month']=='2022-04' and r['active_cell_days']==0 for r in items)
     assert any(r['satellite']=='A' and r['month']=='2023-04' and r['active_cell_days']==0 for r in items)
+
+
+def test_summary_cells_carry_resolvable_evidence_ids_and_stream_aggregates(payload):
+    from firetrust.api import app
+    from fastapi.testclient import TestClient
+    rows=[dict(latitude='39.5',longitude='-8.1',acq_date=f'2024-01-0{d}',acq_time='0100',satellite=s,instrument=i,confidence='n' if i=='VIIRS' else '80',frp='5',scan='.4',track='.5',daynight='N',version='2',type='0') for d in (1,2) for s,i in (('N','VIIRS'),('Terra','MODIS'))]
+    ingest_bytes(payload(rows=rows),'fixture');build_snapshot()
+    data=summary()
+    assert data['detections']==4 and data['cell_count']==2 and data['sensors']=={'VIIRS':2,'MODIS':2}
+    client=TestClient(app)
+    for cell in data['cells']:
+        assert cell['evidence_ids'][0] and client.get('/api/evidence/'+cell['evidence_ids'][0]).status_code==200
+    # Filtered selections keep the evidence lookup inside the filter.
+    filtered=summary(sensor='MODIS')
+    assert filtered['detections']==2 and all(client.get('/api/evidence/'+c['evidence_ids'][0]).json()['detection']['sensor']=='MODIS' for c in filtered['cells'])

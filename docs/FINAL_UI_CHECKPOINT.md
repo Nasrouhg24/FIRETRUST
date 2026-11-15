@@ -68,6 +68,11 @@ The client now issues one request per URL and shares it across screens; the old 
 - Frontend: `npm run build` (type-check and bundle) passed.
 - Browser: 4 of 4 passed, twice in a row.
 
+## Post-release fixes (2026-11-15)
+- **Deployed Zambia/global summary returned HTTP 500** (`/api/analytics?country=Zambia`, and with no region). Cause (likely, not confirmed on the host): the summary copied every column of the selection (about 4 M rows including 64-character ids) into a temp table, which a memory-limited serverless function cannot hold. Fix: aggregates now stream from the Parquet view and only a narrow cell-day table is built; evidence ids are looked up for the at-most-1,000 returned cells. Output is identical; locally Zambia 2.6 s → 1.2 s unlimited and 7.1 s → 3.2 s under a 300 MB DuckDB memory cap. The monthly series got the same treatment. The fix has **not** been deployed or tested on the host.
+- **Explore appeared to show only Europe:** it opened framed on Portugal with the other regions hidden in a dropdown. It now opens on a world view with every archived region outlined (click to switch), an "All regions" button, and the selected region highlighted.
+- Tests: backend 92 passed; browser 5 passed.
+
 ## Unresolved limitations
 - First load for the largest region is slow (seconds); a loading state is shown.
 - Near-real-time processing can no longer be selected in the Calendar or Compare screens (it has no history and no model); the API still supports it.

@@ -94,21 +94,32 @@ def summary(**filters):
 def _summary(data_dir, snapshot_id, key):
     clause,args = predicate(**json.loads(key))
     with open_snapshot(snapshot_id) as db:
-        db.execute('CREATE TEMP TABLE selected AS SELECT * FROM observations' + clause, args)
-        totals = db.execute('SELECT count(*),sum(frp),count(frp),min(acquired_at),max(acquired_at) FROM selected').fetchone()
-        sensors = dict(db.execute('SELECT sensor,count(*) FROM selected GROUP BY sensor').fetchall())
-        confidence = dict(db.execute('SELECT confidence_class,count(*) FROM selected GROUP BY confidence_class').fetchall())
-        days = dictionaries(db.execute('SELECT utc_day AS date,count(*) AS count FROM selected GROUP BY utc_day ORDER BY utc_day'))
-        months = dictionaries(db.execute('SELECT month,count(*) AS count FROM selected GROUP BY month ORDER BY month'))
+        # Stream straight from the Parquet view: nothing wide (ids, timestamps, coordinates) is materialized, so
+        # memory stays bounded by the small cell-day table even for multi-million-row selections.
+        source = ' FROM observations' + clause
+        totals = db.execute('SELECT count(*),sum(frp),count(frp),min(acquired_at),max(acquired_at)' + source, args).fetchone()
+        sensors = dict(db.execute('SELECT sensor,count(*)' + source + ' GROUP BY sensor', args).fetchall())
+        confidence = dict(db.execute('SELECT confidence_class,count(*)' + source + ' GROUP BY confidence_class', args).fetchall())
+        days = dictionaries(db.execute('SELECT utc_day AS date,count(*) AS count' + source + ' GROUP BY utc_day ORDER BY utc_day', args))
+        months = dictionaries(db.execute('SELECT month,count(*) AS count' + source + ' GROUP BY month ORDER BY month', args))
         db.execute('''CREATE TEMP TABLE cells AS SELECT grid_id,utc_day AS date,
-            count(*) AS count,count(DISTINCT sensor) sensor_count,
-            sum(CASE WHEN sensor='MODIS' THEN 1 ELSE 0 END) modis,
-            sum(CASE WHEN sensor='VIIRS' THEN 1 ELSE 0 END) viirs,
-            max(CASE WHEN confidence_class='low' THEN 1 ELSE 0 END) low,
-            min(scan*track) min_footprint,max(scan*track) max_footprint,
-            min(id) evidence_id FROM selected GROUP BY grid_id,utc_day''')
+            count(*)::INTEGER AS count,count(DISTINCT sensor)::TINYINT sensor_count,
+            sum(CASE WHEN sensor='MODIS' THEN 1 ELSE 0 END)::INTEGER modis,
+            sum(CASE WHEN sensor='VIIRS' THEN 1 ELSE 0 END)::INTEGER viirs,
+            max(CASE WHEN confidence_class='low' THEN 1 ELSE 0 END)::TINYINT low,
+            min(scan*track) min_footprint,max(scan*track) max_footprint''' + source + ' GROUP BY grid_id,utc_day', args)
         cell_count, flagged = db.execute('SELECT count(*),count(*) FILTER (WHERE sensor_count=1 OR low=1 OR max_footprint/nullif(min_footprint,0)>4) FROM cells').fetchone()
         cells = dictionaries(db.execute('SELECT * FROM cells ORDER BY low DESC,sensor_count,date DESC,grid_id LIMIT 1000'))
+        if cells:
+            # One evidence id per returned cell, looked up only for the (at most 1000) cells actually sent.
+            db.execute('CREATE TEMP TABLE wanted(grid_id VARCHAR, utc_day VARCHAR)')
+            db.executemany('INSERT INTO wanted VALUES (?,?)', [(c['grid_id'], c['date']) for c in cells])
+            extra = clause.replace(' WHERE ', ' AND ', 1)
+            evidence = {(g, d): i for g, d, i in db.execute(
+                'SELECT grid_id,utc_day,min(id) FROM observations WHERE (grid_id,utc_day) IN (SELECT grid_id,utc_day FROM wanted)'
+                + extra + ' GROUP BY grid_id,utc_day', args).fetchall()}
+            for c in cells:
+                c['evidence_id'] = evidence.get((c['grid_id'], c['date']))
     import h3
     for c in cells:
         lat,lon = h3.cell_to_latlng(c['grid_id'])
@@ -139,14 +150,14 @@ def _monthly(data_dir,snapshot_id,key,reference_satellite,modis_satellite,archiv
     clause,args=predicate(**filters)
     manifest={'snapshot_id':snapshot_id}
     with open_snapshot(manifest['snapshot_id']) as db:
-        db.execute('CREATE TEMP TABLE selected AS SELECT * FROM observations' + clause,args)
+        # Aggregate straight from the Parquet view (no wide temp copy of the selection).
         items = dictionaries(db.execute('''SELECT month,sensor,satellite,processing_status,
             count(*) detection_count,count(DISTINCT (grid_id,utc_day)) active_cell_days,
-            'unknown' coverage_status FROM selected GROUP BY ALL ORDER BY month,sensor,satellite,processing_status'''))
+            'unknown' coverage_status FROM observations''' + clause + ''' GROUP BY ALL ORDER BY month,sensor,satellite,processing_status''',args))
         # Union across satellites and day/night; never sum satellite subtotals.
         union = dictionaries(db.execute('''SELECT month,sensor,processing_status,
             count(DISTINCT (grid_id,utc_day)) active_cell_days,count(*) detection_count,
-            'unknown' coverage_status FROM selected GROUP BY ALL ORDER BY month,sensor,processing_status'''))
+            'unknown' coverage_status FROM observations''' + clause + ''' GROUP BY ALL ORDER BY month,sensor,processing_status''',args))
         # First recorded month per satellite ignores the date window, so zero-filling of a month
         # does not depend on which window was requested.
         unwindowed,unwindowed_args=predicate(**{k:v for k,v in filters.items() if k not in {'start','end'}})

@@ -262,3 +262,7 @@ table.mini td { font-family: var(--mono); color: var(--ink); }
 .fold > summary ~ * { margin-top: 14px; }
 .fold > summary ~ .fine { margin-top: 8px; }
 .legend + .chart { margin-top: 6px; }
+.map-actions { position: absolute; top: 12px; right: 12px; z-index: 500; display: flex; gap: 8px; }
+.map-actions .map-reset { position: static; width: auto; min-width: 36px; padding: 0 12px; font-size: 13px; }
+.map-actions .map-reset[aria-pressed=true] { border-color: var(--accent); color: var(--accent); }
+.map-actions .map-reset[aria-label] { padding: 0; width: 36px; }
